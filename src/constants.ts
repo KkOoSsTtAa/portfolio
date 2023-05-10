@@ -9,6 +9,7 @@ export const skills = [
   "SASS",
   "Material UI",
   "Prisma",
+  "PlanetScale",
   "tRPC",
   "Node.JS",
   "Express.JS",
@@ -17,6 +18,36 @@ export const skills = [
   "CSS",
   "Git",
   "OOP",
+];
+
+export const efood_front_tech_stack = [
+  "React.JS",
+  "TypeScript",
+  "Mobx",
+  "TailwindCSS",
+  "Material UI",
+];
+
+export const efood_back_tech_stack = [
+  "Node.JS",
+  "Express.JS",
+  "MongoDB",
+  "Javascript",
+];
+
+export const order_front_tech_stack = [
+  "React.JS",
+  "Next.JS",
+  "TypeScript",
+  "TailwindCSS",
+  "Material UI",
+];
+
+export const order_back_tech_stack = [
+  "Next.JS",
+  "Prisma",
+  "PlanetScale",
+  "tRPC",
 ];
 
 export const links = [

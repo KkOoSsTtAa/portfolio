@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { fahkwang, anton } from "~/fonts";
+import { fahkwang, anton, fahkwang700 } from "~/fonts";
 
-const HomeSection = () => {
+const WorkSection = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -100 }}
@@ -14,21 +14,28 @@ const HomeSection = () => {
       <section className="container px-5">
         <div
           style={{ fontFamily: `${anton.style.fontFamily}` }}
-          className="mb-5 text-5xl text-myblack"
+          className="mb-20 mt-14 text-center text-5xl text-white"
         >
-          Frontend web developer
+          work
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="tracking-wide text-myblack"
+          className="text-sm tracking-wide text-myblack"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
           repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
           tempora possimus.
+        </div>
+        <div
+          style={{ fontFamily: `${fahkwang700.style.fontFamily}` }}
+          className="mt-4 text-sm tracking-wide text-myblack"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
+          repudiandae sapiente repellat maxime.
         </div>
       </section>
     </motion.div>
   );
 };
 
-export default HomeSection;
+export default WorkSection;

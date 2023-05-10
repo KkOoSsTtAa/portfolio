@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { fahkwang, anton, fahkwang700 } from "~/fonts";
-import Card from "../components/Card";
-import { skills } from "~/constants";
+import Card from "./Card";
+import { order_back_tech_stack, order_front_tech_stack } from "~/constants";
+import { SocialIcon } from "react-social-icons";
 
-const AboutSection = () => {
+const FirstProjectSection = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -100 }}
@@ -16,9 +17,9 @@ const AboutSection = () => {
       <section className="container px-5">
         <div
           style={{ fontFamily: `${anton.style.fontFamily}` }}
-          className="mb-5 text-center text-5xl text-myblack"
+          className="mb-5 mt-24 text-center text-5xl text-white"
         >
-          about
+          <span className="text-myblack">project</span> order
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
@@ -27,30 +28,47 @@ const AboutSection = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
           repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
           tempora possimus. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Alias rem repudiandae sapiente repellat maxime ipsam vel
-          reprehenderit! Minima, tempora possimus.
+          elit.
         </div>
         <div
           style={{ fontFamily: `${fahkwang700.style.fontFamily}` }}
           className="mt-4 text-xs tracking-wide text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime ipsam vel reprehenderit!
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
           className="mb-1 mt-4 text-sm tracking-wide"
         >
-          My skills
+          Frontend tech stack:
         </div>
         <div className="flex flex-wrap gap-[2px]">
-          {skills.map((skill) => (
+          {order_front_tech_stack.map((skill) => (
             <Card key={skill}>{skill}</Card>
           ))}
+        </div>
+        <div
+          style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
+          className="mb-1 mt-4 text-sm tracking-wide"
+        >
+          Backend tech stack:
+        </div>
+        <div className="flex flex-wrap gap-[2px]">
+          {order_back_tech_stack.map((skill) => (
+            <Card key={skill}>{skill}</Card>
+          ))}
+        </div>
+        <div className="flex flex-col items-center justify-center pt-2">
+          <SocialIcon
+            href="https://order-mu.vercel.app/"
+            bgColor="white"
+            style={{ width: "40px", height: "40px" }}
+          />
+          <div className="text-myblack">Visit</div>
         </div>
       </section>
     </motion.div>
   );
 };
 
-export default AboutSection;
+export default FirstProjectSection;

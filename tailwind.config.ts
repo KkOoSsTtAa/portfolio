@@ -7,6 +7,8 @@ export default {
       colors: {
         myblack: "#2F2F2F",
         myyellow: "#FFE793",
+        mygreen: "#1ac073",
+        myblue: "#1976d2",
       },
     },
   },
