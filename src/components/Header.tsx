@@ -11,10 +11,15 @@ const Header = ({
   }[];
 }) => {
   return (
-    <header className="absolute top-7 w-full">
+    <header className="fixed top-7 z-20 w-full">
       <nav className="flex w-full justify-center gap-10 text-sm">
         {navLinks.map((navLink, index) => (
-          <HeaderButton key={index} active={navLink.inView}>
+          <HeaderButton
+            key={index}
+            active={navLink.inView}
+            className={`${navLinks[2]?.inView ? "text-white" : "text-myblack"}`}
+            motionDivClassName={`${navLinks[2]?.inView ? "bg-white" : ""}`}
+          >
             {navLink.label}
           </HeaderButton>
         ))}
@@ -23,9 +28,9 @@ const Header = ({
         <div
           className={`h-7 w-7 ${
             !navLinks[0]?.inView ? "translate-x-[30px]" : ""
-          } ${
+          } ${navLinks[3]?.inView ? "translate-x-[40px]" : ""} ${
             navLinks[2]?.inView ? "z-10" : ""
-          } rounded-full bg-[#FFE793] transition-all duration-300`}
+          } rounded-full bg-myyellow transition-all duration-300`}
         />
         <div
           className={`overflow-x-hidden ${
@@ -38,7 +43,9 @@ const Header = ({
         <div
           className={`h-7 w-7 ${
             !navLinks[0]?.inView ? "-translate-x-[30px]" : ""
-          } rounded-full bg-[#2F2F2F] transition-all duration-300 `}
+          } ${
+            navLinks[3]?.inView ? "-translate-x-[40px]" : ""
+          } rounded-full bg-myblack transition-all duration-300 `}
         />
       </div>
     </header>

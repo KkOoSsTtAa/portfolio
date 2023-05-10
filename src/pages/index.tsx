@@ -1,8 +1,11 @@
-import Header from "components/Header";
-import HomeSection from "components/HomeSection";
+import Header from "~/components/Header";
+import HomeSection from "~/components/HomeSection";
 import { type NextPage } from "next";
 import Head from "next/head";
 import { useInView } from "react-intersection-observer";
+import BackgroundCircles from "~/components/BackgroundCircles";
+import AboutSection from "~/components/AboutSection";
+import ContactSection from "~/components/ContactSection";
 
 const Home: NextPage = () => {
   const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.51 });
@@ -43,44 +46,50 @@ const Home: NextPage = () => {
           inView1
             ? "bg-white"
             : inView2
-            ? "bg-red-500"
+            ? "bg-white"
             : inView3
-            ? "bg-slate-500"
+            ? "bg-white"
             : inView4
-            ? "bg-blue-500"
-            : "bg-green-500"
+            ? "bg-white"
+            : "bg-white"
         }`}
       >
         <Header navLinks={navLinks} />
         <div
           id="home"
           ref={ref1}
-          className="flex h-screen snap-start items-center justify-center"
+          className="relative z-10 flex h-screen snap-start items-center justify-center"
         >
           <HomeSection />
         </div>
         <div
           id="about"
           ref={ref2}
-          className="flex h-screen snap-start items-center justify-center text-5xl"
+          className="relative z-10 flex h-screen snap-start items-center justify-center"
         >
-          2
+          <AboutSection />
         </div>
         <div
           id="work"
           ref={ref3}
-          className="flex h-screen snap-start items-center justify-center text-5xl"
+          className="relative z-10 flex h-screen snap-start items-center justify-center"
         >
           3
         </div>
         <div
           id="contact"
           ref={ref4}
-          className="flex h-screen snap-start items-center justify-center text-5xl"
+          className="relative z-10 flex h-screen snap-start items-center justify-center"
         >
-          4
+          <ContactSection />
         </div>
       </main>
+      <BackgroundCircles
+        inView1={inView1}
+        inView2={inView2}
+        inView3={inView3}
+        inView4={inView4}
+      />
     </>
   );
 };

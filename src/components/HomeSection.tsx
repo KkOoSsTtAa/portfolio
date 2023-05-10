@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { fahkwang, robotoMono700 } from "~/fonts";
+import { fahkwang, anton } from "~/fonts";
 
 const HomeSection = () => {
   return (
@@ -13,14 +13,14 @@ const HomeSection = () => {
     >
       <section className="container px-5">
         <div
-          style={{ fontFamily: `${robotoMono700.style.fontFamily}` }}
-          className="mb-5 text-4xl tracking-tighter"
+          style={{ fontFamily: `${anton.style.fontFamily}` }}
+          className="mb-5 text-5xl text-myblack"
         >
           Frontend web developer
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="tracking-wide"
+          className="tracking-wide text-myblack"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
           repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
