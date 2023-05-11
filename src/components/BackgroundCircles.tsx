@@ -2,6 +2,7 @@ import React from "react";
 
 type BackgroundCirclesProps = {
   inView: {
+    inView0: boolean;
     inView1: boolean;
     inView2: boolean;
     inView3: boolean;
@@ -11,31 +12,37 @@ type BackgroundCirclesProps = {
 };
 
 const BackgroundCircles = ({
-  inView: { inView1, inView2, inView3, inView4, inView5 },
+  inView: { inView0, inView1, inView2, inView3, inView4, inView5 },
 }: BackgroundCirclesProps) => {
+  const black0 = "left-[-25%] top-[70%] h-[50vmax] w-[50vmax]";
+  const black1 =
+    "left-[50%] top-[95%] h-[25vmax] w-[25vmax] translate-x-[-50%]";
+  const black2 =
+    "left-[50%] top-[-15%] h-[45vmax] w-[45vmax] translate-x-[-50%] lg:top-[-40%]";
+  const black34 =
+    "left-[50%] top-[-60%] h-[75vmax] w-[75vmax] translate-x-[-50%] lg:top-[-50%] lg:h-[35vmax] lg:w-[35vmax]";
+  const black5 =
+    "left-[50%] top-[80%] h-[105vmax] w-[105vmax] translate-x-[-50%]";
+
   return (
     <>
       <div
-        className={`fixed left-1/2 right-[-80vw] top-[-45vmax] h-[80vmax] w-[80vmax] rounded-full bg-myyellow transition-all duration-700 ease-in-out ${
-          inView1 ? "translate-x-[-50%]" : ""
-        } ${inView2 ? "-translate-x-[30vh] -translate-y-[60vh]" : ""} ${
-          inView3 || inView4 ? "-translate-x-[30vh] -translate-y-[90vh]" : ""
-        } ${inView5 ? "-translate-x-[30vh] -translate-y-[50vh]" : ""}`}
+        className={`fixed left-[50%] top-[-35vmax] h-[75vmax] w-[75vmax] transform rounded-full bg-myyellow transition-all duration-700 ${
+          inView1
+            ? "top-[-100vmax] h-[130vmax] w-[130vmax] translate-x-[-50%]"
+            : ""
+        } ${
+          inView2 || inView3 || inView4 || inView5
+            ? "top-[-100vmax] h-[130vmax] w-[130vmax] translate-x-[-50%] translate-y-[-50%]"
+            : ""
+        } `}
       />
       <div
-        className={`fixed -left-[30%] top-[80%] h-[60vmax] w-[60vmax] rounded-full bg-myblack transition-all duration-700 ease-in-out ${
-          inView1
-            ? "h-[40vmax] w-[40vmax] translate-x-[70%] translate-y-[30%] transform"
-            : ""
-        } ${
-          inView2
-            ? "h-[150vmax] w-[150vmax] -translate-y-[130%] translate-x-[0%] transform lg:-translate-y-[125%] xl:-translate-y-[120%] 2xl:-translate-y-[115%]"
-            : ""
-        } ${
-          inView3 || inView4
-            ? "translate-x-[40%] translate-y-[-180%] md:translate-x-[80%] lg:translate-y-[-160%] xl:translate-y-[-150%]"
-            : ""
-        } ${inView5 ? "translate-x-[20vh] translate-y-[5vh]" : ""}`}
+        className={`fixed transform rounded-full bg-myblack transition-all duration-700 ${
+          inView0 ? black0 : ""
+        } ${inView1 ? black1 : ""} ${inView2 ? black2 : ""} ${
+          inView3 || inView4 ? black34 : ""
+        } ${inView5 ? black5 : ""}`}
       />
     </>
   );

@@ -79,7 +79,7 @@ const Home: NextPage = () => {
         </SectionWrapper>
       </main>
       <BackgroundCircles
-        inView={{ inView1, inView2, inView3, inView4, inView5 }}
+        inView={{ inView0, inView1, inView2, inView3, inView4, inView5 }}
       />
     </>
   );
