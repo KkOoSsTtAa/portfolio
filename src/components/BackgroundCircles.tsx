@@ -27,7 +27,7 @@ const BackgroundCircles = ({
   return (
     <>
       <div
-        className={`fixed left-[50%] top-[-35vmax] h-[75vmax] w-[75vmax] transform rounded-full bg-myyellow transition-all duration-700 ${
+        className={`fixed left-[50%] top-[-35vmax] h-[75vmax] w-[75vmax] rounded-full bg-myyellow transition-all duration-700 ${
           inView1
             ? "top-[-100vmax] h-[130vmax] w-[130vmax] translate-x-[-50%]"
             : ""
@@ -38,7 +38,7 @@ const BackgroundCircles = ({
         } `}
       />
       <div
-        className={`fixed transform rounded-full bg-myblack transition-all duration-700 ${
+        className={`fixed rounded-full bg-myblack transition-all duration-700 ${
           inView0 ? black0 : ""
         } ${inView1 ? black1 : ""} ${inView2 ? black2 : ""} ${
           inView3 || inView4 ? black34 : ""
