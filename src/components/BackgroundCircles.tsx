@@ -14,7 +14,7 @@ type BackgroundCirclesProps = {
 const BackgroundCircles = ({
   inView: { inView0, inView1, inView2, inView3, inView4, inView5 },
 }: BackgroundCirclesProps) => {
-  const black0 = "left-[-25%] top-[70%] h-[50vmax] w-[50vmax]";
+  const black0 = "left-[-25%] top-[80%] h-[50vmax] w-[50vmax]";
   const black1 =
     "left-[50%] top-[95%] h-[25vmax] w-[25vmax] translate-x-[-50%]";
   const black2 =

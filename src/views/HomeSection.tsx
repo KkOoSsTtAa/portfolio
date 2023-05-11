@@ -10,7 +10,7 @@ const HomeSection = () => {
       <CustomSection>
         <h1
           style={{ fontFamily: `${anton.style.fontFamily}` }}
-          className="mb-5 max-w-[70%] text-5xl text-myblack md:mb-10 md:max-w-[50%] lg:text-6xl xl:text-7xl"
+          className="-mt-28 mb-5 max-w-[80%] text-5xl text-myblack sm:mt-0 md:mb-10 md:max-w-[50%] lg:text-6xl xl:text-7xl"
         >
           {heading1}
         </h1>
