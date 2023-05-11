@@ -3,6 +3,7 @@ import React from "react";
 import { fahkwang, anton, fahkwang700 } from "~/fonts";
 import Card from "../components/Card";
 import { skills } from "~/constants";
+import { aboutHeading, aboutMySkills, aboutText1, aboutText2 } from "~/data";
 
 const AboutSection = () => {
   return (
@@ -14,35 +15,30 @@ const AboutSection = () => {
       }}
     >
       <section className="container px-5">
-        <div
+        <h3
           style={{ fontFamily: `${anton.style.fontFamily}` }}
           className="mb-5 text-center text-5xl text-myblack"
         >
-          about
-        </div>
-        <div
+          {aboutHeading}
+        </h3>
+        <p
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="text-xs tracking-wide text-myblack"
+          className="text-xs text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
-          tempora possimus. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Alias rem repudiandae sapiente repellat maxime ipsam vel
-          reprehenderit! Minima, tempora possimus.
-        </div>
-        <div
+          {aboutText1}
+        </p>
+        <p
           style={{ fontFamily: `${fahkwang700.style.fontFamily}` }}
-          className="mt-4 text-xs tracking-wide text-myblack"
+          className="mt-4 text-xs text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime ipsam vel reprehenderit!
-        </div>
-        <div
+          {aboutText2}
+        </p>
+        <h4
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="mb-1 mt-4 text-sm tracking-wide"
+          className="mb-1 mt-4 text-sm"
         >
-          My skills
-        </div>
+          {aboutMySkills}
+        </h4>
         <div className="flex flex-wrap gap-[2px]">
           {skills.map((skill) => (
             <Card key={skill}>{skill}</Card>

@@ -7,12 +7,12 @@ type CardProps = {
 
 const Card = ({ children }: CardProps) => {
   return (
-    <div
+    <span
       style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
       className="w-fit rounded-[25px] bg-myblack px-3 py-1 text-xs tracking-wide text-white"
     >
       {children}
-    </div>
+    </span>
   );
 };
 

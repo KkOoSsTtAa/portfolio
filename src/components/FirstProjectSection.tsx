@@ -3,7 +3,14 @@ import React from "react";
 import { fahkwang, anton, fahkwang700 } from "~/fonts";
 import Card from "./Card";
 import { order_back_tech_stack, order_front_tech_stack } from "~/constants";
-import { SocialIcon } from "react-social-icons";
+import {
+  backendTechnologies,
+  firstProjectHeading,
+  firstProjectText1,
+  firstProjectText2,
+  frontendTechnologies,
+} from "~/data";
+import CustomLink from "./CustomLink";
 
 const FirstProjectSection = () => {
   return (
@@ -19,28 +26,25 @@ const FirstProjectSection = () => {
           style={{ fontFamily: `${anton.style.fontFamily}` }}
           className="mb-5 mt-24 text-center text-5xl text-white"
         >
-          <span className="text-black">project</span> order
+          <span className="text-black">project</span> {firstProjectHeading}
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="text-xs tracking-wide text-myblack"
+          className="text-xs text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
-          tempora possimus. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit.
+          {firstProjectText1}
         </div>
         <div
           style={{ fontFamily: `${fahkwang700.style.fontFamily}` }}
-          className="mt-4 text-xs tracking-wide text-myblack"
+          className="mt-4 text-xs text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          {firstProjectText2}
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="mb-1 mt-4 text-sm tracking-wide"
+          className="mb-1 mt-4 text-sm"
         >
-          Frontend tech stack:
+          {frontendTechnologies}
         </div>
         <div className="flex flex-wrap gap-[2px]">
           {order_front_tech_stack.map((skill) => (
@@ -49,26 +53,16 @@ const FirstProjectSection = () => {
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="mb-1 mt-4 text-sm tracking-wide"
+          className="mb-1 mt-4 text-sm"
         >
-          Backend tech stack:
+          {backendTechnologies}
         </div>
         <div className="flex flex-wrap gap-[2px]">
           {order_back_tech_stack.map((skill) => (
             <Card key={skill}>{skill}</Card>
           ))}
         </div>
-        <a
-          href="https://order-mu.vercel.app/"
-          className="mt-4 flex flex-col items-center justify-center gap-1"
-          target="_blank"
-        >
-          <SocialIcon
-            bgColor="white"
-            style={{ width: "40px", height: "40px" }}
-          />
-          <div className="text-white">Visit</div>
-        </a>
+        <CustomLink href="https://order-mu.vercel.app/" />
       </section>
     </motion.div>
   );

@@ -16,7 +16,7 @@ const AboutSection = () => {
       <section className="container px-5">
         <div
           style={{ fontFamily: `${anton.style.fontFamily}` }}
-          className="mb-10 text-center text-5xl text-myblack"
+          className="-mt-10 mb-5 text-center text-5xl text-myblack sm:mb-20"
         >
           contact
         </div>
@@ -28,6 +28,8 @@ const AboutSection = () => {
               className="text-myblack"
               bgColor="#2F2F2F"
               style={{ height: 60, width: 60 }}
+              target="_blank"
+              rel="noopener noreferrer"
             />
           ))}
         </div>

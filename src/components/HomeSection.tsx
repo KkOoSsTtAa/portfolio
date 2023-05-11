@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { heading1, heading2 } from "~/data";
 import { fahkwang, anton } from "~/fonts";
 
 const HomeSection = () => {
@@ -12,20 +13,18 @@ const HomeSection = () => {
       }}
     >
       <section className="container px-5">
-        <div
+        <h1
           style={{ fontFamily: `${anton.style.fontFamily}` }}
           className="mb-5 text-5xl text-myblack"
         >
-          Frontend web developer
-        </div>
-        <div
+          {heading1}
+        </h1>
+        <h2
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
           className="tracking-wide text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
-          tempora possimus.
-        </div>
+          {heading2}
+        </h2>
       </section>
     </motion.div>
   );

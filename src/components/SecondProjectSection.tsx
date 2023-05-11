@@ -3,7 +3,14 @@ import React from "react";
 import { fahkwang, anton, fahkwang700 } from "~/fonts";
 import Card from "./Card";
 import { efood_back_tech_stack, efood_front_tech_stack } from "~/constants";
-import { SocialIcon } from "react-social-icons";
+import {
+  backendTechnologies,
+  frontendTechnologies,
+  secondProjectHeading,
+  secondProjectText1,
+  secondProjectText2,
+} from "~/data";
+import CustomLink from "./CustomLink";
 
 const SecondProjectSection = () => {
   return (
@@ -19,28 +26,25 @@ const SecondProjectSection = () => {
           style={{ fontFamily: `${anton.style.fontFamily}` }}
           className="mb-5 mt-32 text-center text-5xl text-white"
         >
-          <span className="text-black">project</span> e-food
+          <span className="text-black">project</span> {secondProjectHeading}
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
           className="text-xs tracking-wide text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
-          tempora possimus. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit.
+          {secondProjectText1}
         </div>
         <div
           style={{ fontFamily: `${fahkwang700.style.fontFamily}` }}
           className="mt-4 text-xs tracking-wide text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          {secondProjectText2}
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
           className="mb-1 mt-4 text-sm tracking-wide"
         >
-          Frontend tech stack:
+          {frontendTechnologies}
         </div>
         <div className="flex flex-wrap gap-[2px]">
           {efood_front_tech_stack.map((skill) => (
@@ -51,24 +55,14 @@ const SecondProjectSection = () => {
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
           className="mb-1 mt-4 text-sm tracking-wide"
         >
-          Backend tech stack:
+          {backendTechnologies}
         </div>
         <div className="flex flex-wrap gap-[2px]">
           {efood_back_tech_stack.map((skill) => (
             <Card key={skill}>{skill}</Card>
           ))}
         </div>
-        <a
-          href="https://efood.onrender.com/"
-          className="mt-4 flex flex-col items-center justify-center gap-1"
-          target="_blank"
-        >
-          <SocialIcon
-            bgColor="white"
-            style={{ width: "40px", height: "40px" }}
-          />
-          <div className="text-white">Visit</div>
-        </a>
+        <CustomLink href="https://efood.onrender.com/" />
       </section>
     </motion.div>
   );

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { workHeading, workText1, workText2 } from "~/data";
 import { fahkwang, anton, fahkwang700 } from "~/fonts";
 
 const WorkSection = () => {
@@ -16,22 +17,19 @@ const WorkSection = () => {
           style={{ fontFamily: `${anton.style.fontFamily}` }}
           className="mb-32 mt-20 text-center text-5xl text-myyellow"
         >
-          work
+          {workHeading}
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="text-sm tracking-wide text-myblack"
+          className="text-sm text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime ipsam vel reprehenderit! Minima,
-          tempora possimus.
+          {workText1}
         </div>
         <div
           style={{ fontFamily: `${fahkwang700.style.fontFamily}` }}
-          className="mt-4 text-sm tracking-wide text-myblack"
+          className="mt-4 text-sm text-myblack"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem
-          repudiandae sapiente repellat maxime.
+          {workText2}
         </div>
       </section>
     </motion.div>
