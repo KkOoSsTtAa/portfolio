@@ -10,8 +10,10 @@ import CustomMotionDiv from "../components/CustomMotionDiv";
 const AboutSection = () => {
   return (
     <CustomMotionDiv>
-      <CustomSection>
-        <CustomH3 variant="black">{aboutHeading}</CustomH3>
+      <CustomSection centered>
+        <CustomH3 variant="black" className="mb-5">
+          {aboutHeading}
+        </CustomH3>
         <CustomParagraphs text1={aboutText1} text2={aboutText2} />
         <CardList title={aboutMySkills} cards={skills} />
       </CustomSection>

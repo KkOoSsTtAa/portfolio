@@ -10,13 +10,13 @@ const HomeSection = () => {
       <CustomSection>
         <h1
           style={{ fontFamily: `${anton.style.fontFamily}` }}
-          className="mb-5 text-5xl text-myblack md:mb-10 md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
+          className="mb-5 max-w-[70%] text-5xl text-myblack md:mb-10 md:max-w-[50%] lg:text-6xl xl:text-7xl"
         >
           {heading1}
         </h1>
         <h2
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-          className="tracking-wide text-myblack md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
+          className="tracking-wide text-myblack sm:w-3/4 sm:text-lg lg:text-xl xl:text-2xl"
         >
           {heading2}
         </h2>

@@ -16,7 +16,7 @@ const CardList = (props: CardListProps) => {
       >
         {props.title}
       </h4>
-      <div className="flex flex-wrap gap-[2px]">
+      <div className="flex flex-wrap gap-[2px] md:max-w-[60%]">
         {props.cards.map((card) => (
           <Card key={card}>{card}</Card>
         ))}

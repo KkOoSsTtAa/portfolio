@@ -17,7 +17,7 @@ import CustomMotionDiv from "../components/CustomMotionDiv";
 const FirstProjectSection = () => {
   return (
     <CustomMotionDiv>
-      <CustomSection>
+      <CustomSection centered>
         <CustomH3 variant="white" className="mt-24">
           {firstProjectHeading}
         </CustomH3>

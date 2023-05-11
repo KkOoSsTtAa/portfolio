@@ -8,7 +8,7 @@ type Props = {
 const NameComponent = ({ fullyVisible }: Props) => {
   return (
     <div
-      className={`overflow-x-hidden md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl ${
+      className={`overflow-x-hidden md:text-lg lg:text-xl xl:text-2xl ${
         fullyVisible ? "w-0" : ""
       } transition-all duration-300`}
       style={{ fontFamily: `${robotoMono500.style.fontFamily}` }}

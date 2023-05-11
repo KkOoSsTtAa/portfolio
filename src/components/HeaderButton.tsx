@@ -15,7 +15,7 @@ const HeaderButton = ({
 }) => {
   return (
     <button
-      className={`md:text-md relative uppercase transition-all duration-200 lg:text-lg xl:text-xl 2xl:text-2xl ${
+      className={`md:text-md relative uppercase transition-all duration-200 lg:text-lg xl:text-xl ${
         className ?? ""
       }`}
       style={{ fontFamily: `${fahkwang.style.fontFamily}` }}

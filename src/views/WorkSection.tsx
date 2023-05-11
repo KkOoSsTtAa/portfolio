@@ -8,8 +8,8 @@ import CustomMotionDiv from "../components/CustomMotionDiv";
 const WorkSection = () => {
   return (
     <CustomMotionDiv>
-      <CustomSection>
-        <CustomH3 variant="yellow" className="mb-32 mt-20">
+      <CustomSection centered>
+        <CustomH3 variant="yellow" className="mb-32 mt-24">
           {workHeading}
         </CustomH3>
         <CustomParagraphs text1={workText1} text2={workText2} />
