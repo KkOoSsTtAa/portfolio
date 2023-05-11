@@ -14,7 +14,7 @@ const WorkSection = () => {
       <section className="container px-5">
         <div
           style={{ fontFamily: `${anton.style.fontFamily}` }}
-          className="mb-20 mt-14 text-center text-5xl text-white"
+          className="mb-32 mt-20 text-center text-5xl text-white"
         >
           work
         </div>
