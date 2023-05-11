@@ -58,14 +58,17 @@ const SecondProjectSection = () => {
             <Card key={skill}>{skill}</Card>
           ))}
         </div>
-        <div className="flex flex-col items-center justify-center pt-2">
+        <a
+          href="https://efood.onrender.com/"
+          className="mt-4 flex flex-col items-center justify-center gap-1"
+          target="_blank"
+        >
           <SocialIcon
-            href="https://efood.onrender.com/"
             bgColor="white"
             style={{ width: "40px", height: "40px" }}
           />
-          <div className="text-myblack">Visit</div>
-        </div>
+          <div className="text-white">Visit</div>
+        </a>
       </section>
     </motion.div>
   );

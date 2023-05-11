@@ -35,7 +35,7 @@ const BackgroundCircles = ({
             : ""
         } ${
           inView2
-            ? "h-[90vmax] w-[90vmax] -translate-y-[110vmax] translate-x-[16vmax] transform sm:-translate-y-[100vmax] sm:translate-x-[26vmax] md:-translate-y-[105vmax] xl:-translate-y-[97vmax]"
+            ? "h-[90vmax] w-[90vmax] -translate-y-[110vmax] translate-x-[10vmax] transform sm:-translate-y-[100vmax] sm:translate-x-[26vmax] md:-translate-y-[105vmax] xl:-translate-y-[97vmax]"
             : ""
         } ${
           inView3 || inView4

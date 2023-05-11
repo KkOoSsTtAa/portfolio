@@ -4,6 +4,7 @@ import { fahkwang, anton, fahkwang700 } from "~/fonts";
 import Card from "./Card";
 import { order_back_tech_stack, order_front_tech_stack } from "~/constants";
 import { SocialIcon } from "react-social-icons";
+import Link from "next/link";
 
 const FirstProjectSection = () => {
   return (
@@ -58,14 +59,17 @@ const FirstProjectSection = () => {
             <Card key={skill}>{skill}</Card>
           ))}
         </div>
-        <div className="flex flex-col items-center justify-center pt-2">
+        <a
+          href="https://order-mu.vercel.app/"
+          className="mt-4 flex flex-col items-center justify-center gap-1"
+          target="_blank"
+        >
           <SocialIcon
-            href="https://order-mu.vercel.app/"
             bgColor="white"
             style={{ width: "40px", height: "40px" }}
           />
-          <div className="text-myblack">Visit</div>
-        </div>
+          <div className="text-white">Visit</div>
+        </a>
       </section>
     </motion.div>
   );
