@@ -9,7 +9,7 @@ const Card = ({ children }: CardProps) => {
   return (
     <span
       style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-      className="w-fit rounded-[25px] bg-myblack px-3 py-1 text-xs tracking-wide text-white"
+      className="w-fit rounded-[25px] bg-myblack px-3 py-1 text-xs tracking-wide text-white md:text-sm"
     >
       {children}
     </span>

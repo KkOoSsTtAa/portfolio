@@ -21,7 +21,7 @@ export const workText1 =
 export const workText2 =
   "My role involves: maintaining the existing website, developing new features, debugging errors, optimizing performance, and migrating to a new design.";
 
-export const firstProjectHeading = "order";
+export const firstProjectHeading = "project 'order'";
 
 export const firstProjectText1 =
   "Project ORDER is a web application that allows users to order food from a restaurant. It is a full-stack application that I developed on my own.";
@@ -33,10 +33,12 @@ export const frontendTechnologies = "Frontend technologies";
 
 export const backendTechnologies = "Backend technologies";
 
-export const secondProjectHeading = "e-food";
+export const secondProjectHeading = "project 'e-food'";
 
 export const secondProjectText1 =
   "This was my first React project ever. I had only built one website using HTML, CSS and a bit of JS before this one. I was interested in learning the MERN stack and I decided to give it a try.";
 
 export const secondProjectText2 =
   "The project is not finished yet, as I have gained a lot of knowledge about React and I felt the need to start over.";
+
+export const contactHeading = "contact";

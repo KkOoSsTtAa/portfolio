@@ -1,20 +1,17 @@
 import React from "react";
 
 type BackgroundCirclesProps = {
-  inView0: boolean;
-  inView1: boolean;
-  inView2: boolean;
-  inView3: boolean;
-  inView4: boolean;
-  inView5: boolean;
+  inView: {
+    inView1: boolean;
+    inView2: boolean;
+    inView3: boolean;
+    inView4: boolean;
+    inView5: boolean;
+  };
 };
 
 const BackgroundCircles = ({
-  inView1,
-  inView2,
-  inView3,
-  inView4,
-  inView5,
+  inView: { inView1, inView2, inView3, inView4, inView5 },
 }: BackgroundCirclesProps) => {
   return (
     <>

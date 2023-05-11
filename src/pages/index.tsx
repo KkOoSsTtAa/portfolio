@@ -1,14 +1,15 @@
 import Header from "~/components/Header";
-import HomeSection from "~/components/HomeSection";
+import HomeSection from "~/views/HomeSection";
 import { type NextPage } from "next";
 import Head from "next/head";
 import { useInView } from "react-intersection-observer";
 import BackgroundCircles from "~/components/BackgroundCircles";
-import AboutSection from "~/components/AboutSection";
-import ContactSection from "~/components/ContactSection";
-import WorkSection from "~/components/WorkSection";
-import FirstProjectSection from "~/components/FirstProjectSection";
-import SecondProjectSection from "~/components/SecondProjectSection";
+import AboutSection from "~/views/AboutSection";
+import ContactSection from "~/views/ContactSection";
+import WorkSection from "~/views/WorkSection";
+import FirstProjectSection from "~/views/FirstProjectSection";
+import SecondProjectSection from "~/views/SecondProjectSection";
+import SectionWrapper from "~/components/SectionWrapper";
 
 const Home: NextPage = () => {
   const { ref: ref0, inView: inView0 } = useInView({ threshold: 0.51 });
@@ -58,54 +59,27 @@ const Home: NextPage = () => {
         }`}
       >
         <Header navLinks={navLinks} />
-        <div
-          id="home"
-          ref={ref0}
-          className="relative z-10 flex h-screen snap-start items-center justify-center"
-        >
+        <SectionWrapper id="home" ref={ref0}>
           <HomeSection />
-        </div>
-        <div
-          id="about"
-          ref={ref1}
-          className="relative z-10 flex h-screen snap-start items-center justify-center"
-        >
+        </SectionWrapper>
+        <SectionWrapper id="about" ref={ref1}>
           <AboutSection />
-        </div>
-        <div
-          id="work"
-          ref={ref2}
-          className="relative z-10 flex h-screen snap-start items-center justify-center"
-        >
+        </SectionWrapper>
+        <SectionWrapper id="work" ref={ref2}>
           <WorkSection />
-        </div>
-        <div
-          ref={ref3}
-          className="relative z-10 flex h-screen snap-start items-center justify-center"
-        >
+        </SectionWrapper>
+        <SectionWrapper ref={ref3}>
           <FirstProjectSection />
-        </div>
-        <div
-          ref={ref4}
-          className="relative z-10 flex h-screen snap-start items-center justify-center"
-        >
+        </SectionWrapper>
+        <SectionWrapper ref={ref4}>
           <SecondProjectSection />
-        </div>
-        <div
-          id="contact"
-          ref={ref5}
-          className="relative z-10 flex h-screen snap-start items-center justify-center"
-        >
+        </SectionWrapper>
+        <SectionWrapper id="contact" ref={ref5}>
           <ContactSection />
-        </div>
+        </SectionWrapper>
       </main>
       <BackgroundCircles
-        inView0={inView0}
-        inView1={inView1}
-        inView2={inView2}
-        inView3={inView3}
-        inView4={inView4}
-        inView5={inView5}
+        inView={{ inView1, inView2, inView3, inView4, inView5 }}
       />
     </>
   );
