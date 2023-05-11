@@ -18,7 +18,7 @@ const SecondProjectSection = () => {
   return (
     <CustomMotionDiv>
       <CustomSection centered>
-        <CustomH3 variant="white" className="mt-32">
+        <CustomH3 variant="white" className="mb-5 mt-32">
           {secondProjectHeading}
         </CustomH3>
         <CustomParagraphs
