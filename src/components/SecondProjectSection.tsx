@@ -19,7 +19,7 @@ const SecondProjectSection = () => {
           style={{ fontFamily: `${anton.style.fontFamily}` }}
           className="mb-5 mt-32 text-center text-5xl text-white"
         >
-          <span className="text-myblack">project</span> e-food
+          <span className="text-black">project</span> e-food
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}

@@ -10,7 +10,6 @@ type BackgroundCirclesProps = {
 };
 
 const BackgroundCircles = ({
-  inView0,
   inView1,
   inView2,
   inView3,

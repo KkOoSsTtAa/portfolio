@@ -4,7 +4,6 @@ import { fahkwang, anton, fahkwang700 } from "~/fonts";
 import Card from "./Card";
 import { order_back_tech_stack, order_front_tech_stack } from "~/constants";
 import { SocialIcon } from "react-social-icons";
-import Link from "next/link";
 
 const FirstProjectSection = () => {
   return (
@@ -20,7 +19,7 @@ const FirstProjectSection = () => {
           style={{ fontFamily: `${anton.style.fontFamily}` }}
           className="mb-5 mt-24 text-center text-5xl text-white"
         >
-          <span className="text-myblack">project</span> order
+          <span className="text-black">project</span> order
         </div>
         <div
           style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
