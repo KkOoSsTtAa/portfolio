@@ -35,11 +35,11 @@ const BackgroundCircles = ({
             : ""
         } ${
           inView2
-            ? "h-[90vmax] w-[90vmax] -translate-y-[110vmax] translate-x-[10vmax] transform sm:-translate-y-[100vmax] sm:translate-x-[26vmax] md:-translate-y-[105vmax] xl:-translate-y-[97vmax]"
+            ? "h-[90vmax] w-[90vmax] -translate-y-[110vmax] translate-x-[0vmax] transform sm:-translate-y-[100vmax] sm:translate-x-[26vmax] md:-translate-y-[105vmax] xl:-translate-y-[97vmax]"
             : ""
         } ${
           inView3 || inView4
-            ? "translate-x-[30vmax] translate-y-[-105vmax] transform md:translate-x-[40vmax] md:translate-y-[-100vmax] lg:translate-x-[50vmax] lg:translate-y-[-90vmax] "
+            ? "translate-x-[20vmax] translate-y-[-105vmax] transform md:translate-x-[40vmax] md:translate-y-[-100vmax] lg:translate-x-[50vmax] lg:translate-y-[-90vmax] "
             : ""
         } ${inView5 ? "translate-x-[20vh] translate-y-[5vh]" : ""}`}
       />
