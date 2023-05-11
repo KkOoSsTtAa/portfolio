@@ -25,7 +25,7 @@ const BackgroundCircles = ({
         } ${inView5 ? "-translate-x-[30vh] -translate-y-[60vh]" : ""}`}
       />
       <div
-        className={`fixed -left-[30%] top-[70%] h-[60vmax] w-[60vmax] rounded-full bg-myblack transition-all duration-700 ease-in-out ${
+        className={`fixed -left-[30%] top-[80%] h-[60vmax] w-[60vmax] rounded-full bg-myblack transition-all duration-700 ease-in-out ${
           inView1
             ? "h-[40vmax] w-[40vmax] translate-x-[70%] translate-y-[30%] transform"
             : ""
