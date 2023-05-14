@@ -22,10 +22,7 @@ const HeaderButton = ({
       onClick={() => {
         const element = document.getElementById(children);
         if (element) {
-          element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
+          element.scrollIntoView(true);
         }
       }}
     >

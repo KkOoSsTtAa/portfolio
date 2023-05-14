@@ -78,7 +78,7 @@ const BackgroundCircles = ({
   return (
     <>
       <motion.div
-        className="fixed rounded-full bg-myyellow transition-all duration-700 ease-in-out"
+        className="fixed rounded-full bg-myyellow"
         initial={{
           left: "50%",
           top: "-35vmax",
@@ -103,9 +103,13 @@ const BackgroundCircles = ({
               }
             : {}
         }
+        transition={{
+          ease: "linear",
+          duration: 0.3,
+        }}
       />
       <motion.div
-        className="fixed rounded-full bg-myblack transition-all duration-700 ease-in-out "
+        className="fixed rounded-full bg-myblack"
         initial={style0}
         animate={
           inView1
@@ -118,6 +122,10 @@ const BackgroundCircles = ({
             ? style5
             : {}
         }
+        transition={{
+          ease: "linear",
+          duration: 0.3,
+        }}
       />
     </>
   );
