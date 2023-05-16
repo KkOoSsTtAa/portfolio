@@ -29,6 +29,8 @@ export const firstProjectText1 =
 export const firstProjectText2 =
   "I was amazed by Next.JS and its recent updates, and I wanted to try it out. I am impressed by its recent updates and eager to see how it will influence not only React, but also the entire web development community.";
 
+export const firtsProjectUrl = "https://order.kkoossttaa.com/";
+
 export const frontendTechnologies = "Frontend technologies";
 
 export const backendTechnologies = "Backend technologies";
