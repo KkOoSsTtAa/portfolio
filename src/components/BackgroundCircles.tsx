@@ -105,7 +105,7 @@ const BackgroundCircles = ({
         }
         transition={{
           ease: "linear",
-          duration: 0.3,
+          duration: 0.5,
         }}
       />
       <motion.div
@@ -124,7 +124,7 @@ const BackgroundCircles = ({
         }
         transition={{
           ease: "linear",
-          duration: 0.3,
+          duration: 0.5,
         }}
       />
     </>
