@@ -9,7 +9,7 @@ export const aboutText1 =
   "My programming journey began in High School, where I learned Pascal and enjoyed it a lot. I continued to study C, C++, and C# in college, but I did not complete my degree due to life challenges. However, my programming passion remained strong.";
 
 export const aboutText2 =
-  "I began learning web development about one an a half years ago and I am passionate about expanding my skills and knowledge. However, I sometimes feel that there is not enough time in life to learn everything I want to learn.";
+  "I began learning web development about one and a half years ago and I am passionate about expanding my skills and knowledge. However, I sometimes feel that there is not enough time in life to learn everything I want to learn.";
 
 export const aboutMySkills = "My skills";
 
