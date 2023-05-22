@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://kkoossttaa.com/sitemap.xml
