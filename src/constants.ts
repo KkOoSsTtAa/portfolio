@@ -11,7 +11,7 @@ export const skills = [
   "Express.JS",
   "MongoDB",
   "Vue.JS",
-  "Quasar",
+  "Pinia",
   "Prisma",
   "tRPC",
   "Git",
