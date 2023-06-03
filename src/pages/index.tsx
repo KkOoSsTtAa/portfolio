@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <main
-        className={`h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 ${
+        className={`h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myblack  ${
           inView3 ? "bg-mygreen" : inView4 ? "bg-myblue" : "bg-white"
         }`}
       >
