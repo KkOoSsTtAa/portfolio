@@ -57,6 +57,7 @@ const Home: NextPage = () => {
         className={`h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myblack  ${
           inView3 ? "bg-mygreen" : inView4 ? "bg-myblue" : "bg-white"
         }`}
+        style={{ height: "100dvh" }}
       >
         <Header navLinks={navLinks} />
         <SectionWrapper id="home" ref={ref0}>
