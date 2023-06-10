@@ -1,3 +1,8 @@
+export const title = "Nemanja Kostadinović Kosta - Frontend Web Developer";
+
+export const meta_description =
+  "Passionate Frontend web developer from Serbia, with intentions to learn and grow as much as possible in all directions of programming. Open to work!";
+
 export const heading1 = "Frontend web developer";
 
 export const heading2 =

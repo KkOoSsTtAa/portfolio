@@ -10,6 +10,7 @@ import WorkSection from "~/views/WorkSection";
 import FirstProjectSection from "~/views/FirstProjectSection";
 import SecondProjectSection from "~/views/SecondProjectSection";
 import SectionWrapper from "~/components/SectionWrapper";
+import { meta_description, title } from "~/data";
 
 const Home: NextPage = () => {
   const { ref: ref0, inView: inView0 } = useInView({ threshold: 0.51 });
@@ -47,11 +48,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Nemanja Kostadinović</title>
-        <meta
-          name="description"
-          content="Nemanja Kostadinović | KkOoSsTtAa | web developer | personal portfolio"
-        />
+        <title>{title}</title>
+        <meta name="description" content={meta_description} />
       </Head>
       <main
         className={`h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myblack  ${
