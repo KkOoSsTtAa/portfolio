@@ -21,7 +21,7 @@ export const aboutMySkills = "My skills";
 export const workHeading = "work";
 
 export const workText1 =
-  "For the past six months, I have been working as a Frontend web developer at a small company in Niš, Serbia. However, due to the NDA I signed, I cannot disclose any further details about my work there.";
+  "Since december 2022. I have been working as a Frontend web developer at a small company in Niš, Serbia. However, due to the NDA I signed, I cannot disclose any further details about my work there.";
 
 export const workText2 =
   "My role involves: maintaining the existing website, developing new features, debugging errors, optimizing performance, and migrating to a new design.";
