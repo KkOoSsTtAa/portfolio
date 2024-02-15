@@ -29,7 +29,7 @@ export const workText2 =
 export const firstProjectHeading = "project 'order'";
 
 export const firstProjectText1 =
-  "Project ORDER is a web application that allows users to order food from a restaurant. It is a full-stack application that I developed on my own. It is not finished yet.";
+  "Project ORDER is my first web application that allows users to order food from a restaurant. It is made in mid 2022. It is a full-stack application that I developed on my own. It is not finished yet.";
 
 export const firstProjectText2 =
   "I was amazed by Next.JS, and I wanted to try it out. I am impressed by its recent updates and eager to see how it will influence not only React, but also the entire web development community.";
