@@ -8,7 +8,6 @@ import AboutSection from "~/views/AboutSection";
 import ContactSection from "~/views/ContactSection";
 import WorkSection from "~/views/WorkSection";
 import FirstProjectSection from "~/views/FirstProjectSection";
-import SecondProjectSection from "~/views/SecondProjectSection";
 import SectionWrapper from "~/components/SectionWrapper";
 import { meta_description, title } from "~/data";
 
@@ -17,6 +16,7 @@ const Home: NextPage = () => {
   const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.51 });
   const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.51 });
   const { ref: ref3, inView: inView3 } = useInView({ threshold: 0.51 });
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { ref: ref4, inView: inView4 } = useInView({ threshold: 0.51 });
   const { ref: ref5, inView: inView5 } = useInView({ threshold: 0.51 });
 
