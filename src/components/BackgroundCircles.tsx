@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import useWindowSize from "~/hooks/useWindowSize";
+import useWindowSize from "@/hooks/useWindowSize";
 
 type BackgroundCirclesProps = {
   inView: {
@@ -94,14 +94,14 @@ const BackgroundCircles = ({
                 translateX: "-50%",
               }
             : inView2 || inView3 || inView4 || inView5
-            ? {
-                top: "-100vmax",
-                height: "130vmax",
-                width: "130vmax",
-                translateX: "-50%",
-                translateY: "-50%",
-              }
-            : {}
+              ? {
+                  top: "-100vmax",
+                  height: "130vmax",
+                  width: "130vmax",
+                  translateX: "-50%",
+                  translateY: "-50%",
+                }
+              : {}
         }
         transition={{
           ease: "linear",
@@ -115,12 +115,12 @@ const BackgroundCircles = ({
           inView1
             ? style1
             : inView2
-            ? style2
-            : inView3 || inView4
-            ? style34
-            : inView5
-            ? style5
-            : {}
+              ? style2
+              : inView3 || inView4
+                ? style34
+                : inView5
+                  ? style5
+                  : {}
         }
         transition={{
           ease: "linear",

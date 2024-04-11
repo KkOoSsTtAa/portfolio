@@ -1,5 +1,5 @@
 import React from "react";
-import { anton } from "~/fonts";
+import { anton } from "@/fonts";
 
 type CustomH3Props = {
   children: React.ReactNode;
@@ -15,10 +15,10 @@ const CustomH3 = (props: CustomH3Props) => {
         props.variant === "yellow"
           ? "text-myyellow"
           : props.variant === "black"
-          ? "text-myblack"
-          : props.variant === "white"
-          ? "text-white"
-          : ""
+            ? "text-myblack"
+            : props.variant === "white"
+              ? "text-white"
+              : ""
       } ${props.className ?? ""}`}
     >
       {props.children}

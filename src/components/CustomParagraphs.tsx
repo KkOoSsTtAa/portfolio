@@ -1,5 +1,5 @@
 import React from "react";
-import { fahkwang, fahkwang700 } from "~/fonts";
+import { fahkwang, fahkwang700 } from "@/fonts";
 
 type CustomParagraphsProps = {
   text1: string;

@@ -9,29 +9,29 @@
     "start": "next start"
   },
   "dependencies": {
-    "framer-motion": "^11.0.5",
-    "next": "^14.1.0",
+    "framer-motion": "^11.0.28",
+    "next": "^14.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-intersection-observer": "^9.8.0",
-    "react-social-icons": "^6.14.0"
+    "react-intersection-observer": "^9.8.2",
+    "react-social-icons": "^6.16.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.2",
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
-    "postcss": "^8.4.35",
+    "@types/eslint": "^8.56.8",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.76",
+    "@types/react-dom": "^18.2.25",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^14.1.4",
+    "postcss": "^8.4.38",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prettier-plugin-tailwindcss": "^0.5.13",
     "tailwind-scrollbar": "^3.1.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   },
   "ct3aMetadata": {
     "initVersion": "7.13.0"

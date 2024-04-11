@@ -1,9 +1,9 @@
 import React from "react";
-import { workHeading, workText1, workText2 } from "~/data";
-import CustomH3 from "../components/CustomH3";
-import CustomSection from "../components/CustomSection";
-import CustomParagraphs from "../components/CustomParagraphs";
-import CustomMotionDiv from "../components/CustomMotionDiv";
+import { workHeading, workText1, workText2 } from "@/data";
+import CustomH3 from "@/components/CustomH3";
+import CustomSection from "@/components/CustomSection";
+import CustomParagraphs from "@/components/CustomParagraphs";
+import CustomMotionDiv from "@/components/CustomMotionDiv";
 
 const WorkSection = () => {
   return (

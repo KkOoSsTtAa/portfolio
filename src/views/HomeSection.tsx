@@ -1,8 +1,8 @@
 import React from "react";
-import { heading1, heading2 } from "~/data";
-import { fahkwang, anton } from "~/fonts";
-import CustomSection from "../components/CustomSection";
-import CustomMotionDiv from "../components/CustomMotionDiv";
+import { heading1, heading2 } from "@/data";
+import { fahkwang, anton } from "@/fonts";
+import CustomSection from "@/components/CustomSection";
+import CustomMotionDiv from "@/components/CustomMotionDiv";
 
 const HomeSection = () => {
   return (

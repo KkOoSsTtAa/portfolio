@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { links } from "~/constants";
+import { links } from "@/constants";
 
 const CustomSocialIconsLinks = () => {
   return (

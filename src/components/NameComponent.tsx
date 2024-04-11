@@ -1,5 +1,5 @@
 import React from "react";
-import { robotoMono500 } from "~/fonts";
+import { robotoMono500 } from "@/fonts";
 
 type Props = {
   fullyVisible: boolean;

@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { fahkwang } from "~/fonts";
+import { fahkwang } from "@/fonts";
 
 type CardListProps = {
   title: string;

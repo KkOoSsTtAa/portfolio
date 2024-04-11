@@ -1,15 +1,15 @@
-import Header from "~/components/Header";
-import HomeSection from "~/views/HomeSection";
+import Header from "@/components/Header";
+import HomeSection from "@/views/HomeSection";
 import { type NextPage } from "next";
 import Head from "next/head";
 import { useInView } from "react-intersection-observer";
-import BackgroundCircles from "~/components/BackgroundCircles";
-import AboutSection from "~/views/AboutSection";
-import ContactSection from "~/views/ContactSection";
-import WorkSection from "~/views/WorkSection";
-import FirstProjectSection from "~/views/FirstProjectSection";
-import SectionWrapper from "~/components/SectionWrapper";
-import { meta_description, title } from "~/data";
+import BackgroundCircles from "@/components/BackgroundCircles";
+import AboutSection from "@/views/AboutSection";
+import ContactSection from "@/views/ContactSection";
+import WorkSection from "@/views/WorkSection";
+import FirstProjectSection from "@/views/FirstProjectSection";
+import SectionWrapper from "@/components/SectionWrapper";
+import { meta_description, title } from "@/data";
 
 const Home: NextPage = () => {
   const { ref: ref0, inView: inView0 } = useInView({ threshold: 0.51 });

@@ -1,5 +1,5 @@
 import React from "react";
-import { order_back_tech_stack, order_front_tech_stack } from "~/constants";
+import { order_back_tech_stack, order_front_tech_stack } from "@/constants";
 import {
   backendTechnologies,
   firstProjectHeading,
@@ -7,13 +7,13 @@ import {
   firstProjectText2,
   firstProjectUrl,
   frontendTechnologies,
-} from "~/data";
-import CustomLink from "../components/CustomLink";
-import CustomH3 from "../components/CustomH3";
-import CustomSection from "../components/CustomSection";
-import CustomParagraphs from "../components/CustomParagraphs";
-import CardList from "../components/CardList";
-import CustomMotionDiv from "../components/CustomMotionDiv";
+} from "@/data";
+import CustomLink from "@/components/CustomLink";
+import CustomH3 from "@/components/CustomH3";
+import CustomSection from "@/components/CustomSection";
+import CustomParagraphs from "@/components/CustomParagraphs";
+import CardList from "@/components/CardList";
+import CustomMotionDiv from "@/components/CustomMotionDiv";
 
 const FirstProjectSection = () => {
   return (

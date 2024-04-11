@@ -1,5 +1,5 @@
 import React from "react";
-import { fahkwang } from "~/fonts";
+import { fahkwang } from "@/fonts";
 
 type CardProps = {
   children: React.ReactNode;
