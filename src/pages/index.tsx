@@ -69,9 +69,6 @@ const Home: NextPage = () => {
         <SectionWrapper ref={ref3}>
           <FirstProjectSection />
         </SectionWrapper>
-        {/* <SectionWrapper ref={ref4}>
-          <SecondProjectSection />
-        </SectionWrapper> */}
         <SectionWrapper id="contact" ref={ref5}>
           <ContactSection />
         </SectionWrapper>

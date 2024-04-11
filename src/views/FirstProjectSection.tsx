@@ -5,7 +5,7 @@ import {
   firstProjectHeading,
   firstProjectText1,
   firstProjectText2,
-  firtsProjectUrl,
+  firstProjectUrl,
   frontendTechnologies,
 } from "~/data";
 import CustomLink from "../components/CustomLink";
@@ -25,7 +25,7 @@ const FirstProjectSection = () => {
         <CustomParagraphs text1={firstProjectText1} text2={firstProjectText2} />
         <CardList title={frontendTechnologies} cards={order_front_tech_stack} />
         <CardList title={backendTechnologies} cards={order_back_tech_stack} />
-        <CustomLink href={firtsProjectUrl} />
+        <CustomLink href={firstProjectUrl} />
       </CustomSection>
     </CustomMotionDiv>
   );

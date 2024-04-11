@@ -34,18 +34,10 @@ export const firstProjectText1 =
 export const firstProjectText2 =
   "I was amazed by Next.JS, and I wanted to try it out. I am impressed by its recent updates and eager to see how it will influence not only React, but also the entire web development community.";
 
-export const firtsProjectUrl = "https://order.kkoossttaa.com/";
+export const firstProjectUrl = "https://order.kkoossttaa.com/";
 
 export const frontendTechnologies = "Frontend technologies";
 
 export const backendTechnologies = "Backend technologies";
-
-export const secondProjectHeading = "project 'e-food'";
-
-export const secondProjectText1 =
-  "This was my first React project ever. I had only built one website using HTML, CSS and a bit of JS before this one. I was interested in learning the MERN stack and I decided to give it a try.";
-
-export const secondProjectText2 =
-  "The project is not finished yet, as I have gained a lot of knowledge about React and I felt the need to start over.";
 
 export const contactHeading = "contact";
