@@ -8,14 +8,16 @@ import {
   firstProjectUrl,
   frontendTechnologies,
 } from "@/data";
-import CustomLink from "@/components/CustomLink";
-import CustomH3 from "@/components/CustomH3";
-import CustomSection from "@/components/CustomSection";
-import CustomParagraphs from "@/components/CustomParagraphs";
-import CardList from "@/components/CardList";
-import CustomMotionDiv from "@/components/CustomMotionDiv";
+import {
+  CardList,
+  CustomH3,
+  CustomLink,
+  CustomMotionDiv,
+  CustomParagraphs,
+  CustomSection,
+} from "@/components";
 
-const FirstProjectSection = () => {
+export const FirstProjectSection = () => {
   return (
     <CustomMotionDiv>
       <CustomSection centered>
@@ -30,5 +32,3 @@ const FirstProjectSection = () => {
     </CustomMotionDiv>
   );
 };
-
-export default FirstProjectSection;

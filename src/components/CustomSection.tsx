@@ -5,7 +5,7 @@ type CustomSectionProps = {
   centered?: boolean;
 };
 
-const CustomSection = ({ children, centered }: CustomSectionProps) => {
+export const CustomSection = ({ children, centered }: CustomSectionProps) => {
   return (
     <section
       className={`container px-5 lg:px-20 xl:px-40 ${
@@ -16,5 +16,3 @@ const CustomSection = ({ children, centered }: CustomSectionProps) => {
     </section>
   );
 };
-
-export default CustomSection;

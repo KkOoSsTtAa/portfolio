@@ -6,19 +6,17 @@ type SectionWrapperProps = {
   id?: string;
 };
 
-const SectionWrapper = forwardRef(function SectionWrapper(
-  props: SectionWrapperProps,
-  ref: React.Ref<HTMLDivElement>
+export const SectionWrapper = forwardRef(function SectionWrapper(
+  { children, id }: SectionWrapperProps,
+  ref: React.Ref<HTMLDivElement>,
 ) {
   return (
     <div
-      id={props.id}
+      id={id}
       ref={ref}
       className="relative z-10 flex h-screen snap-start items-center justify-center"
     >
-      {props.children}
+      {children}
     </div>
   );
 });
-
-export default SectionWrapper;

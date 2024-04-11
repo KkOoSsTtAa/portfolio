@@ -1,4 +1,5 @@
 import React from "react";
+
 import { anton } from "@/fonts";
 
 type CustomH3Props = {
@@ -7,23 +8,21 @@ type CustomH3Props = {
   className?: string;
 };
 
-const CustomH3 = (props: CustomH3Props) => {
+export const CustomH3 = ({ children, variant, className }: CustomH3Props) => {
   return (
     <h3
       style={{ fontFamily: `${anton.style.fontFamily}` }}
-      className={`text-center text-5xl text-myblack md:text-6xl lg:text-7xl xl:text-8xl ${
-        props.variant === "yellow"
-          ? "text-myyellow"
-          : props.variant === "black"
-            ? "text-myblack"
-            : props.variant === "white"
+      className={`text-myBlack text-center text-5xl md:text-6xl lg:text-7xl xl:text-8xl ${
+        variant === "yellow"
+          ? "text-myYellow"
+          : variant === "black"
+            ? "text-myBlack"
+            : variant === "white"
               ? "text-white"
               : ""
-      } ${props.className ?? ""}`}
+      } ${className ?? ""}`}
     >
-      {props.children}
+      {children}
     </h3>
   );
 };
-
-export default CustomH3;

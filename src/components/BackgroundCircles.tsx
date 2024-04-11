@@ -1,20 +1,23 @@
 import { motion } from "framer-motion";
 import React from "react";
+
 import useWindowSize from "@/hooks/useWindowSize";
 
 type BackgroundCirclesProps = {
-  inView: {
-    inView0: boolean;
-    inView1: boolean;
-    inView2: boolean;
-    inView3: boolean;
-    inView4: boolean;
-    inView5: boolean;
-  };
+  inView0: boolean;
+  inView1: boolean;
+  inView2: boolean;
+  inView3: boolean;
+  inView4: boolean;
+  inView5: boolean;
 };
 
-const BackgroundCircles = ({
-  inView: { inView1, inView2, inView3, inView4, inView5 },
+export const BackgroundCircles = ({
+  inView1,
+  inView2,
+  inView3,
+  inView4,
+  inView5,
 }: BackgroundCirclesProps) => {
   const { width } = useWindowSize();
 
@@ -78,7 +81,7 @@ const BackgroundCircles = ({
   return (
     <>
       <motion.div
-        className="fixed rounded-full bg-myyellow"
+        className="bg-myYellow fixed rounded-full"
         initial={{
           left: "50%",
           top: "-35vmax",
@@ -109,7 +112,7 @@ const BackgroundCircles = ({
         }}
       />
       <motion.div
-        className="fixed rounded-full bg-myblack"
+        className="bg-myBlack fixed rounded-full"
         initial={style0}
         animate={
           inView1
@@ -130,5 +133,3 @@ const BackgroundCircles = ({
     </>
   );
 };
-
-export default BackgroundCircles;

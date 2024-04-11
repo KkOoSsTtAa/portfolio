@@ -5,7 +5,7 @@ type CustomMotionDivProps = {
   children: React.ReactNode;
 };
 
-const CustomMotionDiv = (props: CustomMotionDivProps) => {
+export const CustomMotionDiv = ({ children }: CustomMotionDivProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -100 }}
@@ -14,9 +14,7 @@ const CustomMotionDiv = (props: CustomMotionDivProps) => {
         duration: 1,
       }}
     >
-      {props.children}
+      {children}
     </motion.div>
   );
 };
-
-export default CustomMotionDiv;

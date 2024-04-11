@@ -1,11 +1,14 @@
 import React from "react";
-import CustomH3 from "@/components/CustomH3";
-import CustomSection from "@/components/CustomSection";
-import CustomMotionDiv from "@/components/CustomMotionDiv";
-import CustomSocialIconsLinks from "@/components/CustomSocialIconsLinks";
-import { contactHeading } from "@/data";
 
-const AboutSection = () => {
+import { contactHeading } from "@/data";
+import {
+  CustomH3,
+  CustomMotionDiv,
+  CustomSection,
+  CustomSocialIconsLinks,
+} from "@/components";
+
+export const ContactSection = () => {
   return (
     <CustomMotionDiv>
       <CustomSection>
@@ -17,5 +20,3 @@ const AboutSection = () => {
     </CustomMotionDiv>
   );
 };
-
-export default AboutSection;

@@ -1,11 +1,13 @@
 import React from "react";
 import { workHeading, workText1, workText2 } from "@/data";
-import CustomH3 from "@/components/CustomH3";
-import CustomSection from "@/components/CustomSection";
-import CustomParagraphs from "@/components/CustomParagraphs";
-import CustomMotionDiv from "@/components/CustomMotionDiv";
+import {
+  CustomH3,
+  CustomMotionDiv,
+  CustomParagraphs,
+  CustomSection,
+} from "@/components";
 
-const WorkSection = () => {
+export const WorkSection = () => {
   return (
     <CustomMotionDiv>
       <CustomSection centered>
@@ -17,5 +19,3 @@ const WorkSection = () => {
     </CustomMotionDiv>
   );
 };
-
-export default WorkSection;

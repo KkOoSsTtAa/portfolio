@@ -1,4 +1,5 @@
 import React from "react";
+
 import { fahkwang, fahkwang700 } from "@/fonts";
 
 type CustomParagraphsProps = {
@@ -6,21 +7,21 @@ type CustomParagraphsProps = {
   text2?: string;
 };
 
-const CustomParagraphs = (props: CustomParagraphsProps) => {
+export const CustomParagraphs = ({ text1, text2 }: CustomParagraphsProps) => {
   return (
     <>
       <p
         style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-        className="text-xs text-myblack md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg"
+        className="text-myBlack text-xs md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg"
       >
-        {props.text1}
+        {text1}
       </p>
-      {props.text2 && (
+      {text2 && (
         <p
           style={{ fontFamily: `${fahkwang700.style.fontFamily}` }}
-          className="mt-4 text-xs text-myblack md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg"
+          className="text-myBlack mt-4 text-xs md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg"
         >
-          {props.text2}
+          {text2}
         </p>
       )}
     </>

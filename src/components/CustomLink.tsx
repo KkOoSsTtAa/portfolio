@@ -4,10 +4,10 @@ type CustomLinkProps = {
   href: string;
 };
 
-const CustomLink = (props: CustomLinkProps) => {
+export const CustomLink = ({ href }: CustomLinkProps) => {
   return (
     <a
-      href={props.href}
+      href={href}
       className="mx-auto mt-4 flex w-fit flex-col items-center justify-center gap-1"
       target="_blank"
     >
@@ -34,5 +34,3 @@ const CustomLink = (props: CustomLinkProps) => {
     </a>
   );
 };
-
-export default CustomLink;

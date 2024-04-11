@@ -1,7 +1,11 @@
 import React from "react";
-import { LeftCircle, RightCircle } from "./SmallCircles";
-import Navigation from "./Navigation";
-import NameComponent from "./NameComponent";
+
+import {
+  LeftCircle,
+  RightCircle,
+  Navigation,
+  NameComponent,
+} from "@/components";
 
 export type NavLinks = {
   label?: string;
@@ -12,7 +16,7 @@ type HeaderProps = {
   navLinks: NavLinks[];
 };
 
-const Header = ({ navLinks }: HeaderProps) => {
+export const Header = ({ navLinks }: HeaderProps) => {
   const handleClick = () => {
     const element = document.getElementById("home");
     if (element) {
@@ -34,5 +38,3 @@ const Header = ({ navLinks }: HeaderProps) => {
     </header>
   );
 };
-
-export default Header;

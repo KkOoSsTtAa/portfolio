@@ -1,24 +1,27 @@
-import Header from "@/components/Header";
-import HomeSection from "@/views/HomeSection";
 import { type NextPage } from "next";
 import Head from "next/head";
 import { useInView } from "react-intersection-observer";
-import BackgroundCircles from "@/components/BackgroundCircles";
-import AboutSection from "@/views/AboutSection";
-import ContactSection from "@/views/ContactSection";
-import WorkSection from "@/views/WorkSection";
-import FirstProjectSection from "@/views/FirstProjectSection";
-import SectionWrapper from "@/components/SectionWrapper";
+
 import { meta_description, title } from "@/data";
+import { BackgroundCircles, Header, SectionWrapper } from "@/components";
+import {
+  AboutSection,
+  ContactSection,
+  FirstProjectSection,
+  HomeSection,
+  WorkSection,
+} from "@/views";
+
+const threshold = 0.51;
 
 const Home: NextPage = () => {
-  const { ref: ref0, inView: inView0 } = useInView({ threshold: 0.51 });
-  const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.51 });
-  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.51 });
-  const { ref: ref3, inView: inView3 } = useInView({ threshold: 0.51 });
+  const { ref: ref0, inView: inView0 } = useInView({ threshold });
+  const { ref: ref1, inView: inView1 } = useInView({ threshold });
+  const { ref: ref2, inView: inView2 } = useInView({ threshold });
+  const { ref: ref3, inView: inView3 } = useInView({ threshold });
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { ref: ref4, inView: inView4 } = useInView({ threshold: 0.51 });
-  const { ref: ref5, inView: inView5 } = useInView({ threshold: 0.51 });
+  const { ref: ref4, inView: inView4 } = useInView({ threshold });
+  const { ref: ref5, inView: inView5 } = useInView({ threshold });
 
   const navLinks = [
     {
@@ -52,8 +55,8 @@ const Home: NextPage = () => {
         <meta name="description" content={meta_description} />
       </Head>
       <main
-        className={`h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myblack  ${
-          inView3 ? "bg-mygreen" : inView4 ? "bg-myblue" : "bg-white"
+        className={`scrollbar-thumb-myBlack h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000  scrollbar-thin ${
+          inView3 ? "bg-myGreen" : inView4 ? "bg-myBlue" : "bg-white"
         }`}
       >
         <Header navLinks={navLinks} />
@@ -74,7 +77,12 @@ const Home: NextPage = () => {
         </SectionWrapper>
       </main>
       <BackgroundCircles
-        inView={{ inView0, inView1, inView2, inView3, inView4, inView5 }}
+        inView0={inView0}
+        inView1={inView1}
+        inView2={inView2}
+        inView3={inView3}
+        inView4={inView4}
+        inView5={inView5}
       />
     </>
   );

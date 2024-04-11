@@ -1,17 +1,19 @@
 import React from "react";
-import { type NavLinks } from "./Header";
-import HeaderButton from "./HeaderButton";
+
+import { type NavLinks, HeaderButton } from "@/components";
 
 type NavigationProps = {
   navLinks: NavLinks[];
 };
 
-const Navigation = ({ navLinks }: NavigationProps) => {
+export const Navigation = ({ navLinks }: NavigationProps) => {
   return (
     <nav className="flex w-full justify-center gap-10 text-sm">
       {navLinks.map((navLink, index) => {
         if (!navLink.label) return null;
+
         let active = navLink.inView;
+
         if (navLink.label === "work") {
           active =
             navLinks[2]?.inView ||
@@ -26,7 +28,7 @@ const Navigation = ({ navLinks }: NavigationProps) => {
             className={`${
               navLinks[2]?.inView || navLinks[3]?.inView || navLinks[4]?.inView
                 ? "text-white"
-                : "text-myblack"
+                : "text-myBlack"
             }`}
             motionDivClassName={`${
               navLinks[2]?.inView || navLinks[3]?.inView || navLinks[4]?.inView
@@ -41,5 +43,3 @@ const Navigation = ({ navLinks }: NavigationProps) => {
     </nav>
   );
 };
-
-export default Navigation;
