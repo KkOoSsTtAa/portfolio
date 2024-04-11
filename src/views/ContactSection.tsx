@@ -1,12 +1,8 @@
 import React from "react";
 
 import { contactHeading } from "@/data";
-import {
-  CustomH3,
-  CustomMotionDiv,
-  CustomSection,
-  CustomSocialIconsLinks,
-} from "@/components";
+import { CustomH3, CustomMotionDiv, CustomSection } from "@/components";
+import { SocialIcons } from "@/components/SocialIcons";
 
 export const ContactSection = () => {
   return (
@@ -15,7 +11,7 @@ export const ContactSection = () => {
         <CustomH3 variant="black" className="-mt-10 mb-5">
           {contactHeading}
         </CustomH3>
-        <CustomSocialIconsLinks />
+        <SocialIcons />
       </CustomSection>
     </CustomMotionDiv>
   );
