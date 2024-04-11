@@ -3,20 +3,15 @@ export const skills = [
   "Next.JS",
   "TypeScript",
   "JavaScript",
-  "Redux",
+  "Jest",
+  "Cypress",
   "Mobx",
+  "Redux",
+  "Zustand",
   "TailwindCSS",
-  "SASS",
   "Node.JS",
   "Express.JS",
-  "MongoDB",
-  "Vue.JS",
-  "Pinia",
-  "Prisma",
-  "tRPC",
   "Git",
-  "Material UI",
-  "OOP",
 ];
 
 export const order_front_tech_stack = [
@@ -27,12 +22,7 @@ export const order_front_tech_stack = [
   "Material UI",
 ];
 
-export const order_back_tech_stack = [
-  "Next.JS",
-  "Prisma",
-  "PlanetScale",
-  "tRPC",
-];
+export const order_back_tech_stack = ["Next.JS", "Prisma", "tRPC"];
 
 export const links = [
   "mailto:nemanja.kostadinovic9@gmail.com",
