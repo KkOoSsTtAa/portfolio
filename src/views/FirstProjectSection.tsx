@@ -27,7 +27,11 @@ export const FirstProjectSection = () => {
         <CustomParagraphs text1={firstProjectText1} text2={firstProjectText2} />
         <CardList title={frontendTechnologies} cards={order_front_tech_stack} />
         <CardList title={backendTechnologies} cards={order_back_tech_stack} />
-        <CustomLink href={firstProjectUrl} />
+        {/* <CustomLink href={firstProjectUrl} /> */}
+        <span className="mt-5 max-w-md text-center text-xs">
+          Link not available - I was using Planetscale and since their
+          cancelation of free plan, I didn't have time to migrate the data.
+        </span>
       </CustomSection>
     </CustomMotionDiv>
   );
