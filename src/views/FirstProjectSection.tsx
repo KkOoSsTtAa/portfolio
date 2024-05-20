@@ -1,21 +1,18 @@
-import React from "react";
+import {
+  CardList,
+  CustomH3,
+  CustomMotionDiv,
+  CustomParagraphs,
+  CustomSection,
+} from "@/components";
 import { order_back_tech_stack, order_front_tech_stack } from "@/constants";
 import {
   backendTechnologies,
   firstProjectHeading,
   firstProjectText1,
   firstProjectText2,
-  firstProjectUrl,
   frontendTechnologies,
 } from "@/data";
-import {
-  CardList,
-  CustomH3,
-  CustomLink,
-  CustomMotionDiv,
-  CustomParagraphs,
-  CustomSection,
-} from "@/components";
 
 export const FirstProjectSection = () => {
   return (
