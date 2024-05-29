@@ -1,12 +1,12 @@
-export const title = "Nemanja Kostadinović Kosta - Software Engineer";
+export const title = "Nemanja Kostadinović Kosta - Full stack web developer";
 
 export const meta_description =
-  "Passionate Frontend web developer from Serbia, with intentions to learn and grow as much as possible in all directions of programming. Open to work!";
+  "Passionate Full stack web developer from Serbia, with intentions to learn and grow as much as possible in all directions of programming. Open to work!";
 
-export const heading1 = "Software Engineer";
+export const heading1 = "Full stack web developer";
 
 export const heading2 =
-  "I am a passionate Frontend web developer from Serbia with intentions to learn and grow as much as possible, not just as a frontend developer but in all directions of programming.";
+  "I am a passionate Full stack web developer from Serbia with intentions to learn and grow as much as possible, not just as a web developer but in all directions of programming.";
 
 export const aboutHeading = "about";
 
@@ -21,7 +21,7 @@ export const aboutMySkills = "My skills";
 export const workHeading = "work";
 
 export const workText1 =
-  "Since december 2022. I have been working as a Frontend web developer at a small company in Niš, Serbia. However, due to the NDA I signed, I cannot disclose any further details about my work there.";
+  "Since december 2022. I have been working as a web developer at a small company in Niš, Serbia. However, due to the NDA I signed, I cannot disclose any further details about my work there.";
 
 export const workText2 =
   "My role involves: maintaining the existing website, developing new features, debugging errors, optimizing performance, and migrating to a new design.";
