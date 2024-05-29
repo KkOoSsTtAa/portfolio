@@ -8,7 +8,12 @@ type Props = ComponentProps<"svg"> & {
 
 export const IconsSvgWrapper = ({ className, href, ...props }: Props) => {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit the project site"
+    >
       <svg
         className={cn(
           "h-[60px] w-[60px] fill-myBlack transition-all duration-300 ease-in-out hover:scale-105 hover:fill-black",

@@ -1,5 +1,3 @@
-import React from "react";
-
 type CustomLinkProps = {
   href: string;
 };
@@ -10,6 +8,7 @@ export const CustomLink = ({ href }: CustomLinkProps) => {
       href={href}
       className="mx-auto mt-4 flex w-fit flex-col items-center justify-center gap-1"
       target="_blank"
+      aria-label="Visit the project site"
     >
       <svg
         style={{ color: "#000000" }}
