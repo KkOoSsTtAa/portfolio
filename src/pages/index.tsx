@@ -2,8 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { useInView } from "react-intersection-observer";
 
-import { meta_description, title } from "@/data";
 import { BackgroundCircles, Header, SectionWrapper } from "@/components";
+import { META_DESCRIPTION, TITLE } from "@/data";
 import {
   AboutSection,
   ContactSection,
@@ -51,11 +51,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={meta_description} />
+        <title>{TITLE}</title>
+        <meta name="description" content={META_DESCRIPTION} />
       </Head>
       <main
-        className={`scrollbar-thumb-myBlack h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000  scrollbar-thin ${
+        className={`h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myBlack ${
           inView3 ? "bg-myGreen" : inView4 ? "bg-myBlue" : "bg-white"
         }`}
       >

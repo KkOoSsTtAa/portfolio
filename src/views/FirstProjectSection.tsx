@@ -5,13 +5,14 @@ import {
   CustomParagraphs,
   CustomSection,
 } from "@/components";
-import { order_back_tech_stack, order_front_tech_stack } from "@/constants";
 import {
-  backendTechnologies,
-  firstProjectHeading,
-  firstProjectText1,
-  firstProjectText2,
-  frontendTechnologies,
+  BACKEND_TECH,
+  FRONTEND_TECH,
+  HEADING_FIRST_PROJ,
+  ORDER_PROJ_BACK_TECH_STACK,
+  ORDER_PROJ_FRONT_TECH_STACK,
+  TEXT_FIRST_PROJ_1,
+  TEXT_FIRST_PROJ_2,
 } from "@/data";
 
 export const FirstProjectSection = () => {
@@ -19,12 +20,12 @@ export const FirstProjectSection = () => {
     <CustomMotionDiv>
       <CustomSection centered>
         <CustomH3 variant="white" className="mb-5 mt-24">
-          {firstProjectHeading}
+          {HEADING_FIRST_PROJ}
         </CustomH3>
-        <CustomParagraphs text1={firstProjectText1} text2={firstProjectText2} />
-        <CardList title={frontendTechnologies} cards={order_front_tech_stack} />
-        <CardList title={backendTechnologies} cards={order_back_tech_stack} />
-        {/* <CustomLink href={firstProjectUrl} /> */}
+        <CustomParagraphs text1={TEXT_FIRST_PROJ_1} text2={TEXT_FIRST_PROJ_2} />
+        <CardList title={FRONTEND_TECH} cards={ORDER_PROJ_FRONT_TECH_STACK} />
+        <CardList title={BACKEND_TECH} cards={ORDER_PROJ_BACK_TECH_STACK} />
+        {/* <CustomLink href={URL_FIRST_PROJ} /> */}
         <span className="mt-5 max-w-md text-center text-xs">
           Link not available - I was using Planetscale and since their
           cancelation of free plan, I didn't have time to migrate the data.

@@ -1,15 +1,13 @@
-import React from "react";
-
-import { contactHeading } from "@/data";
 import { CustomH3, CustomMotionDiv, CustomSection } from "@/components";
 import { SocialIcons } from "@/components/SocialIcons";
+import { HEADING_CONTACT } from "@/data";
 
 export const ContactSection = () => {
   return (
     <CustomMotionDiv>
       <CustomSection>
         <CustomH3 variant="black" className="-mt-10 mb-5">
-          {contactHeading}
+          {HEADING_CONTACT}
         </CustomH3>
         <SocialIcons />
       </CustomSection>

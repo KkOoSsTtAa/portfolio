@@ -1,12 +1,10 @@
-import React from "react";
-
 import { IconsSvgWrapper } from "@/components";
-import { githubLink } from "@/constants";
+import { GITHUB_URL } from "@/data";
 
 export const GithubIcon = () => {
   return (
     <IconsSvgWrapper
-      href={githubLink}
+      href={GITHUB_URL}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

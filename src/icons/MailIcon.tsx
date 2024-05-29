@@ -1,12 +1,10 @@
-import React from "react";
-
 import { IconsSvgWrapper } from "@/components";
-import { emailLink } from "@/constants";
+import { EMAIL_URL } from "@/data";
 
 export const MailIcon = () => {
   return (
     <IconsSvgWrapper
-      href={emailLink}
+      href={EMAIL_URL}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

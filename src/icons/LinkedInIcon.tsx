@@ -1,12 +1,10 @@
-import React from "react";
-
 import { IconsSvgWrapper } from "@/components";
-import { linkedinLink } from "@/constants";
+import { LINKEDIN_URL } from "@/data";
 
 export const LinkedInIcon = () => {
   return (
     <IconsSvgWrapper
-      href={linkedinLink}
+      href={LINKEDIN_URL}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
