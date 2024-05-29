@@ -1,30 +1,28 @@
-import React from "react";
-
 import {
   LeftCircle,
-  RightCircle,
-  Navigation,
   NameComponent,
+  Navigation,
+  RightCircle,
 } from "@/components";
 
-export type NavLinks = {
+export type NavLink = {
   label?: string;
   inView: boolean;
 };
 
 type HeaderProps = {
-  navLinks: NavLinks[];
+  navLinks: NavLink[];
 };
 
 export const Header = ({ navLinks }: HeaderProps) => {
   const handleClick = () => {
     const element = document.getElementById("home");
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+    if (!element) return;
+
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   return (

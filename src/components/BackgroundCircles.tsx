@@ -1,6 +1,18 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { useMemo } from "react";
 
+import {
+  INITIAL_STYLE,
+  IN_VIEW_1_ANIMATE,
+  IN_VIEW_REST_ANIMATE,
+  STYLE_0,
+  STYLE_1,
+  STYLE_2_1,
+  STYLE_2_2,
+  STYLE_3_AND_4_1,
+  STYLE_3_AND_4_2,
+  STYLE_5,
+} from "@/constants";
 import useWindowSize from "@/hooks/useWindowSize";
 
 type BackgroundCirclesProps = {
@@ -21,89 +33,26 @@ export const BackgroundCircles = ({
 }: BackgroundCirclesProps) => {
   const { width } = useWindowSize();
 
-  const style0 = {
-    left: "-25%",
-    top: "80%",
-    height: "50vmax",
-    width: "50vmax",
-  };
+  const STYLE_2 = useMemo(
+    () => (width && width > 1024 ? STYLE_2_1 : STYLE_2_2),
+    [width],
+  );
 
-  const style1 = {
-    left: "50%",
-    top: "95%",
-    height: "25vmax",
-    width: "25vmax",
-    translateX: "-50%",
-  };
-
-  const style2 =
-    width && width > 1024
-      ? {
-          left: "50%",
-          top: "-40%",
-          height: "45vmax",
-          width: "45vmax",
-          translateX: "-50%",
-        }
-      : {
-          left: "50%",
-          top: "-15%",
-          height: "45vmax",
-          width: "45vmax",
-          translateX: "-50%",
-        };
-
-  const style34 =
-    width && width > 1024
-      ? {
-          left: "50%",
-          top: "-50%",
-          height: "35vmax",
-          width: "35vmax",
-          translateX: "-50%",
-        }
-      : {
-          left: "50%",
-          top: "-60%",
-          height: "75vmax",
-          width: "75vmax",
-          translateX: "-50%",
-        };
-
-  const style5 = {
-    left: "50%",
-    top: "80%",
-    height: "105vmax",
-    width: "105vmax",
-    translateX: "-50%",
-  };
+  const STYLE_3_AND_4 = useMemo(
+    () => (width && width > 1024 ? STYLE_3_AND_4_1 : STYLE_3_AND_4_2),
+    [width],
+  );
 
   return (
     <>
       <motion.div
-        className="bg-myYellow fixed rounded-full"
-        initial={{
-          left: "50%",
-          top: "-35vmax",
-          height: "75vmax",
-          width: "75vmax",
-        }}
+        className="fixed rounded-full bg-myYellow"
+        initial={INITIAL_STYLE}
         animate={
           inView1
-            ? {
-                top: "-100vmax",
-                height: "130vmax",
-                width: "130vmax",
-                translateX: "-50%",
-              }
+            ? IN_VIEW_1_ANIMATE
             : inView2 || inView3 || inView4 || inView5
-              ? {
-                  top: "-100vmax",
-                  height: "130vmax",
-                  width: "130vmax",
-                  translateX: "-50%",
-                  translateY: "-50%",
-                }
+              ? IN_VIEW_REST_ANIMATE
               : {}
         }
         transition={{
@@ -112,17 +61,17 @@ export const BackgroundCircles = ({
         }}
       />
       <motion.div
-        className="bg-myBlack fixed rounded-full"
-        initial={style0}
+        className="fixed rounded-full bg-myBlack"
+        initial={STYLE_0}
         animate={
           inView1
-            ? style1
+            ? STYLE_1
             : inView2
-              ? style2
+              ? STYLE_2
               : inView3 || inView4
-                ? style34
+                ? STYLE_3_AND_4
                 : inView5
-                  ? style5
+                  ? STYLE_5
                   : {}
         }
         transition={{

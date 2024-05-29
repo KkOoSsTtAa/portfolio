@@ -1,6 +1,6 @@
-import React from "react";
-
+import { NAME } from "@/data";
 import { robotoMono500 } from "@/fonts";
+import { cn } from "@/lib/utils";
 
 type Props = {
   fullyVisible: boolean;
@@ -9,12 +9,13 @@ type Props = {
 export const NameComponent = ({ fullyVisible }: Props) => {
   return (
     <div
-      className={`overflow-x-hidden md:text-lg lg:text-xl xl:text-2xl ${
-        fullyVisible ? "w-0" : ""
-      } transition-all duration-300`}
+      className={cn(
+        "overflow-x-hidden transition-all duration-300 md:text-lg lg:text-xl xl:text-2xl",
+        fullyVisible && "w-0",
+      )}
       style={{ fontFamily: `${robotoMono500.style.fontFamily}` }}
     >
-      NEMANJA KOSTADINOVIĆ
+      {NAME.toUpperCase()}
     </div>
   );
 };

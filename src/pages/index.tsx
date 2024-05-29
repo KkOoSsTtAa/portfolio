@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 import { BackgroundCircles, Header, SectionWrapper } from "@/components";
 import { META_DESCRIPTION, TITLE } from "@/data";
+import { cn } from "@/lib/utils";
 import {
   AboutSection,
   ContactSection,
@@ -11,6 +12,7 @@ import {
   HomeSection,
   WorkSection,
 } from "@/views";
+import { useMemo } from "react";
 
 const threshold = 0.51;
 
@@ -23,30 +25,33 @@ const Home: NextPage = () => {
   const { ref: ref4, inView: inView4 } = useInView({ threshold });
   const { ref: ref5, inView: inView5 } = useInView({ threshold });
 
-  const navLinks = [
-    {
-      label: "home",
-      inView: inView0,
-    },
-    {
-      label: "about",
-      inView: inView1,
-    },
-    {
-      label: "work",
-      inView: inView2,
-    },
-    {
-      inView: inView3,
-    },
-    {
-      inView: inView4,
-    },
-    {
-      label: "contact",
-      inView: inView5,
-    },
-  ];
+  const navLinks = useMemo(
+    () => [
+      {
+        label: "home",
+        inView: inView0,
+      },
+      {
+        label: "about",
+        inView: inView1,
+      },
+      {
+        label: "work",
+        inView: inView2,
+      },
+      {
+        inView: inView3,
+      },
+      {
+        inView: inView4,
+      },
+      {
+        label: "contact",
+        inView: inView5,
+      },
+    ],
+    [inView0, inView1, inView2, inView3, inView4, inView5],
+  );
 
   return (
     <>
@@ -55,9 +60,10 @@ const Home: NextPage = () => {
         <meta name="description" content={META_DESCRIPTION} />
       </Head>
       <main
-        className={`h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myBlack ${
-          inView3 ? "bg-myGreen" : inView4 ? "bg-myBlue" : "bg-white"
-        }`}
+        className={cn(
+          "h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myBlack",
+          inView3 ? "bg-myGreen" : inView4 ? "bg-myBlue" : "bg-white",
+        )}
       >
         <Header navLinks={navLinks} />
         <SectionWrapper id="home" ref={ref0}>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import React from "react";
 
 import { fahkwang } from "@/fonts";
+import { cn } from "@/lib/utils";
 
 type Props = {
   children: string;
@@ -16,25 +16,29 @@ export const HeaderButton = ({
   className,
   motionDivClassName,
 }: Props) => {
+  const onClick = () => {
+    const element = document.getElementById(children);
+    if (!element) return;
+
+    element.scrollIntoView(true);
+  };
+
   return (
     <button
-      className={`md:text-md relative uppercase transition-all duration-200 lg:text-lg xl:text-xl ${
-        className ?? ""
-      }`}
+      className={cn(
+        "md:text-md relative uppercase transition-all duration-200 lg:text-lg xl:text-xl",
+        className,
+      )}
       style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
-      onClick={() => {
-        const element = document.getElementById(children);
-        if (element) {
-          element.scrollIntoView(true);
-        }
-      }}
+      onClick={onClick}
     >
       {children}
       {active && (
         <motion.div
-          className={`bg-myBlack absolute bottom-[-1px] left-0 right-0 h-[1px] ${
-            motionDivClassName ?? ""
-          }`}
+          className={cn(
+            "absolute bottom-[-1px] left-0 right-0 h-[1px] bg-myBlack",
+            motionDivClassName,
+          )}
           layoutId="underline"
         />
       )}

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { ReactNode } from "react";
 
 type CustomMotionDivProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export const CustomMotionDiv = ({ children }: CustomMotionDivProps) => {

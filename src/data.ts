@@ -3,6 +3,8 @@ export const TITLE = "Nemanja Kostadinović Kosta - Full stack web developer";
 export const META_DESCRIPTION =
   "Passionate Full stack web developer from Serbia, with intentions to learn and grow as much as possible in all directions of programming. Open to work!";
 
+export const NAME = "Nemanja Kostadinović";
+
 export const HEADING1 = "Full stack web developer";
 
 export const HEADING2 =
@@ -67,6 +69,9 @@ export const ORDER_PROJ_FRONT_TECH_STACK = [
 ];
 
 export const ORDER_PROJ_BACK_TECH_STACK = ["Next.JS", "Prisma", "tRPC"];
+
+export const ORDER_PROJ_LINK_EXPLANATION =
+  "Link not available - I was using Planetscale and since their cancelation of free plan, I did not have time to migrate the data.";
 
 export const GITHUB_URL = "https://github.com/KkOoSsTtAa";
 export const LINKEDIN_URL =

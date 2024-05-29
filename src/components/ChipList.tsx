@@ -1,14 +1,12 @@
-import React from "react";
-
+import { Chip } from "@/components";
 import { fahkwang } from "@/fonts";
-import { Card } from "@/components";
 
 type CardListProps = {
   title: string;
-  cards: string[];
+  chips: string[];
 };
 
-export const CardList = ({ cards, title }: CardListProps) => {
+export const ChipList = ({ chips, title }: CardListProps) => {
   return (
     <>
       <h4
@@ -18,8 +16,8 @@ export const CardList = ({ cards, title }: CardListProps) => {
         {title}
       </h4>
       <div className="flex flex-wrap gap-[2px] md:max-w-[60%]">
-        {cards.map((card) => (
-          <Card key={card}>{card}</Card>
+        {chips.map((chip) => (
+          <Chip key={chip}>{chip}</Chip>
         ))}
       </div>
     </>

@@ -1,12 +1,13 @@
-import React from "react";
-
-import { type NavLinks, HeaderButton } from "@/components";
+import { HeaderButton, type NavLinks } from "@/components";
 
 type NavigationProps = {
   navLinks: NavLinks[];
 };
 
 export const Navigation = ({ navLinks }: NavigationProps) => {
+  const navLinks2or3or4InView =
+    navLinks[2]?.inView || navLinks[3]?.inView || navLinks[4]?.inView;
+
   return (
     <nav className="flex w-full justify-center gap-10 text-sm">
       {navLinks.map((navLink, index) => {
@@ -14,27 +15,20 @@ export const Navigation = ({ navLinks }: NavigationProps) => {
 
         let active = navLink.inView;
 
-        if (navLink.label === "work") {
+        if (navLink.label === "work" && !active) {
           active =
             navLinks[2]?.inView ||
             navLinks[3]?.inView ||
             navLinks[4]?.inView ||
             false;
         }
+
         return (
           <HeaderButton
             key={index}
             active={active}
-            className={`${
-              navLinks[2]?.inView || navLinks[3]?.inView || navLinks[4]?.inView
-                ? "text-white"
-                : "text-myBlack"
-            }`}
-            motionDivClassName={`${
-              navLinks[2]?.inView || navLinks[3]?.inView || navLinks[4]?.inView
-                ? "bg-white"
-                : ""
-            }`}
+            className={navLinks2or3or4InView ? "text-white" : "text-myBlack"}
+            motionDivClassName={navLinks2or3or4InView ? "bg-white" : undefined}
           >
             {navLink.label}
           </HeaderButton>

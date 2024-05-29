@@ -1,5 +1,5 @@
 import {
-  CardList,
+  ChipList,
   CustomH3,
   CustomMotionDiv,
   CustomParagraphs,
@@ -21,7 +21,7 @@ export const AboutSection = () => {
           {HEADING_ABOUT}
         </CustomH3>
         <CustomParagraphs text1={TEXT_ABOUT_1} text2={TEXT_ABOUT_2} />
-        <CardList title={ABOUT_MY_SKILLS} cards={SKILLS} />
+        <ChipList title={ABOUT_MY_SKILLS} chips={SKILLS} />
       </CustomSection>
     </CustomMotionDiv>
   );
