@@ -1,22 +1,29 @@
-import { type NextPage } from "next";
-import Head from "next/head";
+"use client";
+import { ReactNode, useMemo } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { BackgroundCircles, Header, SectionWrapper } from "@/components";
-import { META_DESCRIPTION, TITLE } from "@/data";
 import { cn } from "@/lib/utils";
-import {
-  AboutSection,
-  ContactSection,
-  FirstProjectSection,
-  HomeSection,
-  WorkSection,
-} from "@/views";
-import { useMemo } from "react";
 
 const threshold = 0.51;
 
-const Home: NextPage = () => {
+// when client component renders other components via
+// props they can still be server components
+type Props = {
+  homeSection: ReactNode;
+  aboutSection: ReactNode;
+  workSection: ReactNode;
+  firstProjectSection: ReactNode;
+  contactSection: ReactNode;
+};
+
+const HomePageWrapper = ({
+  homeSection,
+  aboutSection,
+  workSection,
+  firstProjectSection,
+  contactSection,
+}: Props) => {
   const { ref: ref0, inView: inView0 } = useInView({ threshold });
   const { ref: ref1, inView: inView1 } = useInView({ threshold });
   const { ref: ref2, inView: inView2 } = useInView({ threshold });
@@ -55,10 +62,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>{TITLE}</title>
-        <meta name="description" content={META_DESCRIPTION} />
-      </Head>
       <main
         className={cn(
           "h-screen w-screen min-w-[360px] snap-y snap-mandatory overflow-x-hidden transition-all duration-1000 scrollbar-thin  scrollbar-thumb-myBlack",
@@ -67,19 +70,17 @@ const Home: NextPage = () => {
       >
         <Header navLinks={navLinks} />
         <SectionWrapper id="home" ref={ref0}>
-          <HomeSection />
+          {homeSection}
         </SectionWrapper>
         <SectionWrapper id="about" ref={ref1}>
-          <AboutSection />
+          {aboutSection}
         </SectionWrapper>
         <SectionWrapper id="work" ref={ref2}>
-          <WorkSection />
+          {workSection}
         </SectionWrapper>
-        <SectionWrapper ref={ref3}>
-          <FirstProjectSection />
-        </SectionWrapper>
+        <SectionWrapper ref={ref3}>{firstProjectSection}</SectionWrapper>
         <SectionWrapper id="contact" ref={ref5}>
-          <ContactSection />
+          {contactSection}
         </SectionWrapper>
       </main>
       <BackgroundCircles
@@ -94,4 +95,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePageWrapper;

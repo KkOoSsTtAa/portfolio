@@ -12,8 +12,8 @@ export const NameComponent = ({ fullyVisible }: Props) => {
       className={cn(
         "overflow-x-hidden transition-all duration-300 md:text-lg lg:text-xl xl:text-2xl",
         fullyVisible && "w-0",
+        robotoMono500.className,
       )}
-      style={{ fontFamily: `${robotoMono500.style.fontFamily}` }}
     >
       {NAME.toUpperCase()}
     </div>

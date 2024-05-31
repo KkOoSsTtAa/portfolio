@@ -12,7 +12,6 @@ type CustomH3Props = {
 export const CustomH3 = ({ children, variant, className }: CustomH3Props) => {
   return (
     <h3
-      style={{ fontFamily: `${anton.style.fontFamily}` }}
       className={cn(
         "text-center text-5xl text-myBlack md:text-6xl lg:text-7xl xl:text-8xl",
         variant === "yellow"
@@ -22,6 +21,7 @@ export const CustomH3 = ({ children, variant, className }: CustomH3Props) => {
             : variant === "white"
               ? "text-white"
               : "",
+        anton.className,
         className,
       )}
     >

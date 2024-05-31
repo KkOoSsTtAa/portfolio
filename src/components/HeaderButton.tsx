@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 import { fahkwang } from "@/fonts";
@@ -27,9 +28,9 @@ export const HeaderButton = ({
     <button
       className={cn(
         "md:text-md relative uppercase transition-all duration-200 lg:text-lg xl:text-xl",
+        fahkwang.className,
         className,
       )}
-      style={{ fontFamily: `${fahkwang.style.fontFamily}` }}
       onClick={onClick}
     >
       {children}
