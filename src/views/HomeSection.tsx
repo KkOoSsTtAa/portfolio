@@ -9,7 +9,7 @@ export const HomeSection = () => {
       <CustomSection>
         <h1
           className={cn(
-            "-mt-28 mb-5 max-w-[80%] text-5xl text-myBlack sm:mt-0 md:mb-10 md:max-w-[50%] lg:text-6xl xl:text-7xl",
+            "mb-5 max-w-[80%] text-5xl text-myBlack sm:mt-0 md:mb-10 md:max-w-[50%] lg:text-6xl xl:text-7xl",
             anton.className,
           )}
         >
@@ -17,7 +17,7 @@ export const HomeSection = () => {
         </h1>
         <h2
           className={cn(
-            "tracking-wide text-myBlack sm:w-3/4 sm:text-lg lg:text-xl xl:text-2xl",
+            "w-[90%] tracking-wide text-myBlack sm:w-3/4 sm:text-lg lg:text-xl xl:text-2xl",
             fahkwang.className,
           )}
         >

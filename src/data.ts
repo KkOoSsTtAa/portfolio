@@ -65,7 +65,6 @@ export const ORDER_PROJ_FRONT_TECH_STACK = [
   "Next.JS",
   "TypeScript",
   "TailwindCSS",
-  "Material UI",
 ];
 
 export const ORDER_PROJ_BACK_TECH_STACK = ["Next.JS", "Prisma", "tRPC"];

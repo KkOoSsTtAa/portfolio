@@ -18,7 +18,7 @@ export const ChipList = ({ chips, title }: CardListProps) => {
       >
         {title}
       </h4>
-      <div className="flex flex-wrap gap-[2px] md:max-w-[60%]">
+      <div className="flex flex-wrap gap-1 md:max-w-[60%]">
         {chips.map((chip) => (
           <Chip key={chip}>{chip}</Chip>
         ))}

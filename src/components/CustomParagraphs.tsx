@@ -11,7 +11,7 @@ export const CustomParagraphs = ({ text1, text2 }: CustomParagraphsProps) => {
     <>
       <p
         className={cn(
-          "text-xs text-myBlack md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg",
+          "max-w-[90%] text-xs text-myBlack md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg",
           fahkwang.className,
         )}
       >
@@ -20,7 +20,7 @@ export const CustomParagraphs = ({ text1, text2 }: CustomParagraphsProps) => {
       {text2 && (
         <p
           className={cn(
-            "mt-4 text-xs text-myBlack md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg",
+            "mt-4 max-w-[90%] text-xs text-myBlack md:max-w-[60%] md:text-sm lg:text-base 2xl:text-lg",
             fahkwang700.className,
           )}
         >
