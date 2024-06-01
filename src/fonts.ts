@@ -15,11 +15,6 @@ export const robotoMono500 = Roboto_Mono({
   subsets: ["latin-ext"],
 });
 
-export const robotoMono700 = Roboto_Mono({
-  weight: "700",
-  subsets: ["latin-ext"],
-});
-
 export const anton = Anton({
   weight: "400",
   subsets: ["latin-ext"],

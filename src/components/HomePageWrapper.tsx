@@ -16,7 +16,7 @@ type Props = {
   contactSection: ReactNode;
 };
 
-const HomePageWrapper = ({
+export const HomePageWrapper = ({
   homeSection,
   aboutSection,
   workSection,
@@ -93,5 +93,3 @@ const HomePageWrapper = ({
     </>
   );
 };
-
-export default HomePageWrapper;

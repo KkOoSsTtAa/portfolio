@@ -1,4 +1,4 @@
-import HomePageWrapper from "@/components/HomePageWrapper";
+import { HomePageWrapper } from "@/components";
 import {
   AboutSection,
   ContactSection,

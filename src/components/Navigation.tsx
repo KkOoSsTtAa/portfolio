@@ -1,7 +1,7 @@
-import { HeaderButton, type NavLinks } from "@/components";
+import { HeaderButton, type NavLink } from "@/components";
 
 type NavigationProps = {
-  navLinks: NavLinks[];
+  navLinks: NavLink[];
 };
 
 export const Navigation = ({ navLinks }: NavigationProps) => {

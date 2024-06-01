@@ -1,7 +1,8 @@
 "use client";
-import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 import { useInView } from "react-intersection-observer";
+
+import { cn } from "@/lib/utils";
 
 type CustomMotionDivProps = {
   children: ReactNode;

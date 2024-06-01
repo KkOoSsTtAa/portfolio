@@ -1,5 +1,4 @@
-import { CustomH3, CustomSection } from "@/components";
-import { SocialIcons } from "@/components/SocialIcons";
+import { CustomH3, CustomSection, SocialIcons } from "@/components";
 import { HEADING_CONTACT } from "@/data";
 
 export const ContactSection = () => {
