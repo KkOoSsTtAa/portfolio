@@ -1,75 +1,23 @@
-export const INITIAL_STYLE = {
-  left: "50%",
-  top: "-35vmax",
-  height: "75vmax",
-  width: "75vmax",
-};
+export const circle_2_inView_1 =
+  "left-[50%] top-[95%] h-[25vmax] w-[25vmax] translate-x-[-50%]";
 
-export const STYLE_0 = {
-  left: "-25%",
-  top: "80%",
-  height: "50vmax",
-  width: "50vmax",
-};
+export const circle_2_inView_2_1 =
+  "left-[50%] top-[-40%] h-[45vmax] w-[45vmax] translate-x-[-50%]";
 
-export const STYLE_1 = {
-  left: "50%",
-  top: "95%",
-  height: "25vmax",
-  width: "25vmax",
-  translateX: "-50%",
-};
+export const circle_2_inView_2_2 =
+  "left-[50%] top-[-15%] h-[45vmax] w-[45vmax] translate-x-[-50%]";
 
-export const STYLE_2_1 = {
-  left: "50%",
-  top: "-40%",
-  height: "45vmax",
-  width: "45vmax",
-  translateX: "-50%",
-};
+export const circle_2_inView_3_and_4_1 =
+  "left-[50%] top-[-50%] h-[35vmax] w-[35vmax] translate-x-[-50%]";
 
-export const STYLE_2_2 = {
-  left: "50%",
-  top: "-15%",
-  height: "45vmax",
-  width: "45vmax",
-  translateX: "-50%",
-};
+export const circle_2_inView_3_and_4_2 =
+  "left-[50%] top-[-60%] h-[75vmax] w-[75vmax] translate-x-[-50%]";
 
-export const STYLE_3_AND_4_1 = {
-  left: "50%",
-  top: "-50%",
-  height: "35vmax",
-  width: "35vmax",
-  translateX: "-50%",
-};
-export const STYLE_3_AND_4_2 = {
-  left: "50%",
-  top: "-60%",
-  height: "75vmax",
-  width: "75vmax",
-  translateX: "-50%",
-};
+export const circle_2_inView_5 =
+  "left-[50%] top-[80%] h-[105vmax] w-[105vmax] translate-x-[-50%]";
 
-export const STYLE_5 = {
-  left: "50%",
-  top: "80%",
-  height: "105vmax",
-  width: "105vmax",
-  translateX: "-50%",
-};
+export const circle_1_inView_1 =
+  "top-[-100vmax] h-[130vmax] w-[130vmax] translate-x-[-50%]";
 
-export const IN_VIEW_1_ANIMATE = {
-  top: "-100vmax",
-  height: "130vmax",
-  width: "130vmax",
-  translateX: "-50%",
-};
-
-export const IN_VIEW_REST_ANIMATE = {
-  top: "-100vmax",
-  height: "130vmax",
-  width: "130vmax",
-  translateX: "-50%",
-  translateY: "-50%",
-};
+export const circle_1_inView_rest =
+  "top-[-100vmax] h-[130vmax] w-[130vmax] translate-x-[-50%] translate-y-[-50%]";

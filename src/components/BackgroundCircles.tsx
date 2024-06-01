@@ -1,20 +1,18 @@
 "use client";
-import { motion } from "framer-motion";
 import { useMemo } from "react";
 
 import {
-  INITIAL_STYLE,
-  IN_VIEW_1_ANIMATE,
-  IN_VIEW_REST_ANIMATE,
-  STYLE_0,
-  STYLE_1,
-  STYLE_2_1,
-  STYLE_2_2,
-  STYLE_3_AND_4_1,
-  STYLE_3_AND_4_2,
-  STYLE_5,
+  circle_1_inView_1,
+  circle_1_inView_rest,
+  circle_2_inView_1,
+  circle_2_inView_2_1,
+  circle_2_inView_2_2,
+  circle_2_inView_3_and_4_1,
+  circle_2_inView_3_and_4_2,
+  circle_2_inView_5,
 } from "@/constants";
 import useWindowSize from "@/hooks/useWindowSize";
+import { cn } from "@/lib/utils";
 
 type BackgroundCirclesProps = {
   inView0: boolean;
@@ -25,6 +23,8 @@ type BackgroundCirclesProps = {
   inView5: boolean;
 };
 
+const duration = "duration-500";
+
 export const BackgroundCircles = ({
   inView1,
   inView2,
@@ -34,51 +34,46 @@ export const BackgroundCircles = ({
 }: BackgroundCirclesProps) => {
   const { width } = useWindowSize();
 
-  const STYLE_2 = useMemo(
-    () => (width && width > 1024 ? STYLE_2_1 : STYLE_2_2),
+  const circle_2_inView_2 = useMemo(
+    () => (width && width > 1024 ? circle_2_inView_2_1 : circle_2_inView_2_2),
     [width],
   );
 
-  const STYLE_3_AND_4 = useMemo(
-    () => (width && width > 1024 ? STYLE_3_AND_4_1 : STYLE_3_AND_4_2),
+  const circle_2_inView_3_and_4 = useMemo(
+    () =>
+      width && width > 1024
+        ? circle_2_inView_3_and_4_1
+        : circle_2_inView_3_and_4_2,
     [width],
   );
 
   return (
     <>
-      <motion.div
-        className="fixed rounded-full bg-myYellow"
-        initial={INITIAL_STYLE}
-        animate={
+      <div
+        className={cn(
+          "fixed left-[50%] top-[-35vmax] h-[75vmax] w-[75vmax] rounded-full bg-myYellow transition-all ease-linear",
+          duration,
           inView1
-            ? IN_VIEW_1_ANIMATE
+            ? circle_1_inView_1
             : inView2 || inView3 || inView4 || inView5
-              ? IN_VIEW_REST_ANIMATE
-              : {}
-        }
-        transition={{
-          ease: "linear",
-          duration: 0.5,
-        }}
+              ? circle_1_inView_rest
+              : {},
+        )}
       />
-      <motion.div
-        className="fixed rounded-full bg-myBlack"
-        initial={STYLE_0}
-        animate={
+      <div
+        className={cn(
+          "fixed left-[-25%] top-[80%] h-[50vmax] w-[50vmax] rounded-full bg-myBlack transition-all ease-linear",
+          duration,
           inView1
-            ? STYLE_1
+            ? circle_2_inView_1
             : inView2
-              ? STYLE_2
+              ? circle_2_inView_2
               : inView3 || inView4
-                ? STYLE_3_AND_4
+                ? circle_2_inView_3_and_4
                 : inView5
-                  ? STYLE_5
-                  : {}
-        }
-        transition={{
-          ease: "linear",
-          duration: 0.5,
-        }}
+                  ? circle_2_inView_5
+                  : {},
+        )}
       />
     </>
   );

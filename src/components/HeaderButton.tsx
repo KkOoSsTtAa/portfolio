@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 
 import { fahkwang } from "@/fonts";
 import { cn } from "@/lib/utils";
@@ -35,12 +34,11 @@ export const HeaderButton = ({
     >
       {children}
       {active && (
-        <motion.div
+        <div
           className={cn(
-            "absolute bottom-[-1px] left-0 right-0 h-[1px] bg-myBlack",
+            "absolute bottom-[-1px] left-0 right-0 h-[1px] bg-myBlack transition-all duration-[3000] ",
             motionDivClassName,
           )}
-          layoutId="underline"
         />
       )}
     </button>
