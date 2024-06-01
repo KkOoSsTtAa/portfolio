@@ -1,4 +1,3 @@
-"use client";
 import { ReactNode, Ref, RefObject, forwardRef } from "react";
 
 type SectionWrapperProps = {

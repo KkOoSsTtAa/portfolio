@@ -7,8 +7,7 @@ import { cn } from "@/lib/utils";
 
 const threshold = 0.51;
 
-// when client component renders other components via
-// props they can still be server components
+// components sent via props can still be server components
 type Props = {
   homeSection: ReactNode;
   aboutSection: ReactNode;
