@@ -47,13 +47,14 @@ export const HEADING_CONTACT = "contact";
 export const SKILLS = [
   "React.JS",
   "Next.JS",
-  "TypeScript",
-  "JavaScript",
+  "Typescript",
+  "Javascript",
   "Jest",
   "Cypress",
+  "Open Api",
   "Mobx",
-  "Redux",
   "Zustand",
+  "Redux",
   "TailwindCSS",
   "Node.JS",
   "Express.JS",
@@ -63,7 +64,7 @@ export const SKILLS = [
 export const ORDER_PROJ_FRONT_TECH_STACK = [
   "React.JS",
   "Next.JS",
-  "TypeScript",
+  "Typescript",
   "TailwindCSS",
 ];
 

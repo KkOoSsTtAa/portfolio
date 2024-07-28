@@ -2,14 +2,16 @@
 import { useMemo } from "react";
 
 import {
-  circle_1_inView_1,
-  circle_1_inView_rest,
-  circle_2_inView_1,
-  circle_2_inView_2_1,
-  circle_2_inView_2_2,
-  circle_2_inView_3_and_4_1,
-  circle_2_inView_3_and_4_2,
-  circle_2_inView_5,
+  CIRCLE_1_DEFAULT_STYLES,
+  CIRCLE_1_IN_VIEW_1_STYLES,
+  CIRCLE_1_IN_VIEW_REST_STYLES,
+  CIRCLE_2_DEFAULT_STYLES,
+  CIRCLE_2_IN_VIEW_1_STYLES,
+  CIRCLE_2_IN_VIEW_2_1_STYLES,
+  CIRCLE_2_IN_VIEW_2_2_STYLES,
+  CIRCLE_2_IN_VIEW_3_AND_4_1_STYLES,
+  CIRCLE_2_IN_VIEW_3_AND_4_2_STYLES,
+  CIRCLE_2_IN_VIEW_5_STYLES,
 } from "@/constants";
 import useWindowSize from "@/hooks/useWindowSize";
 import { cn } from "@/lib/utils";
@@ -35,15 +37,18 @@ export const BackgroundCircles = ({
   const { width } = useWindowSize();
 
   const circle_2_inView_2 = useMemo(
-    () => (width && width > 1024 ? circle_2_inView_2_1 : circle_2_inView_2_2),
+    () =>
+      width && width > 1024
+        ? CIRCLE_2_IN_VIEW_2_1_STYLES
+        : CIRCLE_2_IN_VIEW_2_2_STYLES,
     [width],
   );
 
   const circle_2_inView_3_and_4 = useMemo(
     () =>
       width && width > 1024
-        ? circle_2_inView_3_and_4_1
-        : circle_2_inView_3_and_4_2,
+        ? CIRCLE_2_IN_VIEW_3_AND_4_1_STYLES
+        : CIRCLE_2_IN_VIEW_3_AND_4_2_STYLES,
     [width],
   );
 
@@ -51,27 +56,27 @@ export const BackgroundCircles = ({
     <>
       <div
         className={cn(
-          "fixed left-[50%] top-[-35vmax] h-[75vmax] w-[75vmax] rounded-full bg-myYellow transition-all ease-linear",
+          CIRCLE_1_DEFAULT_STYLES,
           duration,
           inView1
-            ? circle_1_inView_1
+            ? CIRCLE_1_IN_VIEW_1_STYLES
             : inView2 || inView3 || inView4 || inView5
-              ? circle_1_inView_rest
+              ? CIRCLE_1_IN_VIEW_REST_STYLES
               : {},
         )}
       />
       <div
         className={cn(
-          "fixed left-[-25%] top-[80%] h-[50vmax] w-[50vmax] rounded-full bg-myBlack transition-all ease-linear",
+          CIRCLE_2_DEFAULT_STYLES,
           duration,
           inView1
-            ? circle_2_inView_1
+            ? CIRCLE_2_IN_VIEW_1_STYLES
             : inView2
               ? circle_2_inView_2
               : inView3 || inView4
                 ? circle_2_inView_3_and_4
                 : inView5
-                  ? circle_2_inView_5
+                  ? CIRCLE_2_IN_VIEW_5_STYLES
                   : {},
         )}
       />
